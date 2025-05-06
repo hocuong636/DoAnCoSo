@@ -1,0 +1,130 @@
+@model CT_Fas.Models.Product
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Chỉnh sửa sản phẩm";
+}
+
+<div class="container-fluid">
+    <h1 class="h3 mb-2 text-gray-800">Chỉnh sửa sản phẩm</h1>
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label">Tên sản phẩm</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Price" class="control-label">Giá</label>
+                            <input asp-for="Price" class="form-control" />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="StockQuantity" class="control-label">Số lượng tồn kho</label>
+                            <input asp-for="StockQuantity" class="form-control" />
+                            <span asp-validation-for="StockQuantity" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Brand" class="control-label">Thương hiệu</label>
+                            <input asp-for="Brand" class="form-control" />
+                            <span asp-validation-for="Brand" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Size" class="control-label">Kích thước</label>
+                            <input asp-for="Size" class="form-control" />
+                            <span asp-validation-for="Size" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="CategoryId" class="control-label">Danh mục</label>
+                            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Description" class="control-label">Mô tả</label>
+                            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Ảnh chính hiện tại</label>
+                            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                            {
+                                <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid mb-2" style="max-width: 200px;" />
+                            }
+                            <input type="file" name="mainImage" class="form-control" accept="image/*" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Ảnh bổ sung</label>
+                            @if (Model.ProductImages != null && Model.ProductImages.Any())
+                            {
+                                <div class="row mb-3">
+                                    @foreach (var image in Model.ProductImages)
+                                    {
+                                        <div class="col-md-4 position-relative">
+                                            <img src="@image.ImageUrl" alt="" class="img-fluid" />
+                                            <button type="button" class="btn btn-danger btn-sm position-absolute"
+                                                    style="top: 5px; right: 20px;"
+                                                    onclick="deleteImage(@image.Id)">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                    }
+                                </div>
+                            }
+                            <input type="file" name="additionalImages" multiple class="form-control" accept="image/*" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Lưu thay đổi
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        function deleteImage(imageId) {
+            if (confirm('Bạn có chắc chắn muốn xóa ảnh này?')) {
+                $.ajax({
+                    url: '/Admin/Product/DeleteImage/' + imageId,
+                    type: 'POST',
+                    success: function(result) {
+                        if(result.success) {
+                            location.reload();
+                        } else {
+                            alert('Có lỗi xảy ra khi xóa ảnh');
+                        }
+                    },
+                    error: function() {
+                        alert('Có lỗi xảy ra khi xóa ảnh');
+                    }
+                });
+            }
+        }
+    </script>
+}

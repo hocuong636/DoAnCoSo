@@ -1,0 +1,197 @@
+@model IEnumerable<CT_Fas.Models.Product>
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "Quản lý sản phẩm";
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Quản lý sản phẩm</h1>
+        <a asp-area="Admin" asp-controller="Product" asp-action="Create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+            <i class="fas fa-plus fa-sm text-white-50"></i> Thêm sản phẩm mới
+        </a>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+
+    <div class="card shadow mb-4">
+        <div class="card-header">
+            <form method="get" class="form-inline">
+                <div class="form-group mx-2">
+                    <label class="mr-2">Danh mục:</label>
+                    <select name="category" class="form-control">
+                        <option value="">Tất cả</option>
+                        @foreach (var category in ViewBag.Categories)
+                        {
+                            <option value="@category" selected="@(category == ViewBag.SelectedCategory)">@category</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group mx-2">
+                    <label class="mr-2">Giá từ:</label>
+                    <input type="number" name="minPrice" class="form-control" value="@ViewBag.MinPrice" />
+                </div>
+                <div class="form-group mx-2">
+                    <label class="mr-2">đến:</label>
+                    <input type="number" name="maxPrice" class="form-control" value="@ViewBag.MaxPrice" />
+                </div>
+                <div class="form-group mx-2">
+                    <label class="mr-2">Tình trạng:</label>
+                    <select name="stockStatus" class="form-control">
+                        <option value="">Tất cả</option>
+                        <option value="out" selected="@(ViewBag.StockStatus == "out")">Hết hàng</option>
+                        <option value="low" selected="@(ViewBag.StockStatus == "low")">Sắp hết</option>
+                        <option value="in" selected="@(ViewBag.StockStatus == "in")">Còn hàng</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary mx-2">Lọc</button>
+                <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-secondary">Đặt lại</a>
+            </form>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <div class="mb-3">
+                    <form id="bulkDeleteForm">
+                        @Html.AntiForgeryToken()
+                        <button type="button" id="bulkDeleteBtn" class="btn btn-danger" style="display: none;">
+                            <i class="fas fa-trash"></i> Xóa đã chọn
+                        </button>
+                    </form>
+                </div>
+                <table class="table table-bordered" id="productTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="selectAll" />
+                            </th>
+                            <th>Ảnh</th>
+                            <th>@Html.DisplayNameFor(model => model.Name)</th>
+                            <th>@Html.DisplayNameFor(model => model.Price)</th>
+                            <th>@Html.DisplayNameFor(model => model.StockQuantity)</th>
+                            <th>@Html.DisplayNameFor(model => model.Category)</th>
+                            <th style="width: 150px;">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr data-id="@item.Id">
+                                <td>
+                                    <input type="checkbox" class="product-checkbox" value="@item.Id" />
+                                </td>
+                                <td style="width: 100px;">
+                                    @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                    {
+                                        <img src="@item.ImageUrl" alt="@item.Name" style="max-width: 80px;" />
+                                    }
+                                </td>
+                                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                                <td>@Html.DisplayFor(modelItem => item.StockQuantity)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Category.Name)</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a asp-area="Admin" asp-controller="Product" asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a asp-area="Admin" asp-controller="Product" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <form asp-area="Admin" asp-controller="Product" asp-action="Delete" asp-route-id="@item.Id"
+                                              method="post"
+                                              onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này?');"
+                                              style="display: inline;">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn btn-danger btn-sm">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var table = $('#productTable').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.24/i18n/Vietnamese.json"
+                }
+            });
+
+            // Xử lý chọn tất cả
+            $('#selectAll').change(function() {
+                $('.product-checkbox').prop('checked', this.checked);
+                updateBulkDeleteButton();
+            });
+
+            // Xử lý chọn từng mục
+            $('.product-checkbox').change(function() {
+                updateBulkDeleteButton();
+                // Cập nhật trạng thái nút chọn tất cả
+                $('#selectAll').prop('checked', $('.product-checkbox:checked').length == $('.product-checkbox').length);
+            });
+
+            // Cập nhật hiển thị nút xóa hàng loạt
+            function updateBulkDeleteButton() {
+                var checkedCount = $('.product-checkbox:checked').length;
+                $('#bulkDeleteBtn').toggle(checkedCount > 0);
+            }
+
+            // Xử lý xóa hàng loạt
+            $('#bulkDeleteBtn').click(function() {
+                if(confirm('Bạn có chắc chắn muốn xóa các sản phẩm đã chọn?')) {
+                    var selectedIds = $('.product-checkbox:checked').map(function() {
+                        return $(this).val();
+                    }).get();
+
+                    $.ajax({
+                        url: '/Admin/Product/DeleteMultiple',
+                        type: 'POST',
+                        data: JSON.stringify(selectedIds),
+                        contentType: 'application/json',
+                        headers: {
+                            'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                        },
+                        success: function(result) {
+                            if(result.success) {
+                                location.reload();
+                            } else {
+                                alert('Có lỗi xảy ra khi xóa sản phẩm');
+                            }
+                        },
+                        error: function() {
+                            alert('Có lỗi xảy ra khi xóa sản phẩm');
+                        }
+                    });
+                }
+            });
+
+            // Hiệu ứng hover cho các nút thao tác
+            $('.btn-group .btn').hover(
+                function() {
+                    $(this).addClass('shadow-sm');
+                },
+                function() {
+                    $(this).removeClass('shadow-sm');
+                }
+            );
+        });
+    </script>
+}
