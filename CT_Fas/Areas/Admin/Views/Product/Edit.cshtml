@@ -1,4 +1,4 @@
-@model CT_Fas.Models.Product
+@model CT_Fas.Models.ViewModels.ProductViewModel
 
 @{
     Layout = "_AdminLayout";
@@ -15,7 +15,7 @@
                 <input type="hidden" asp-for="Id" />
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="form-group">
                             <label asp-for="Name" class="control-label">Tên sản phẩm</label>
                             <input asp-for="Name" class="form-control" />
@@ -29,21 +29,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label asp-for="StockQuantity" class="control-label">Số lượng tồn kho</label>
-                            <input asp-for="StockQuantity" class="form-control" />
-                            <span asp-validation-for="StockQuantity" class="text-danger"></span>
-                        </div>
-
-                        <div class="form-group">
                             <label asp-for="Brand" class="control-label">Thương hiệu</label>
                             <input asp-for="Brand" class="form-control" />
                             <span asp-validation-for="Brand" class="text-danger"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label asp-for="Size" class="control-label">Kích thước</label>
-                            <input asp-for="Size" class="form-control" />
-                            <span asp-validation-for="Size" class="text-danger"></span>
                         </div>
 
                         <div class="form-group">
@@ -57,16 +45,47 @@
                             <textarea asp-for="Description" class="form-control" rows="4"></textarea>
                             <span asp-validation-for="Description" class="text-danger"></span>
                         </div>
+
+                        <div class="form-group">
+                            <label>Sizes và số lượng</label>
+                            <div id="sizesContainer">
+                                @for (var i = 0; i < Model.ProductSizes.Count; i++)
+                                {
+                                    <div class="row mb-2 size-row">
+                                        <div class="col-md-5">
+                                            <input asp-for="@Model.ProductSizes[i].Size" class="form-control" placeholder="Size" />
+                                            <span asp-validation-for="@Model.ProductSizes[i].Size" class="text-danger"></span>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <input asp-for="@Model.ProductSizes[i].StockQuantity" class="form-control" placeholder="Số lượng" type="number" min="0" />
+                                            <span asp-validation-for="@Model.ProductSizes[i].StockQuantity" class="text-danger"></span>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="btn btn-danger btn-remove-size">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <button type="button" class="btn btn-success mt-2" id="addSize">
+                                <i class="fas fa-plus"></i> Thêm size
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label class="control-label">Ảnh chính hiện tại</label>
                             @if (!string.IsNullOrEmpty(Model.ImageUrl))
                             {
                                 <img src="@Model.ImageUrl" alt="@Model.Name" class="img-fluid mb-2" style="max-width: 200px;" />
                             }
-                            <input type="file" name="mainImage" class="form-control" accept="image/*" />
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="mainImage" name="MainImage" accept="image/*" onchange="previewImage(this, 'mainImagePreview')" />
+                                <label class="custom-file-label" for="mainImage">Chọn ảnh mới...</label>
+                            </div>
+                            <img id="mainImagePreview" src="#" alt="Preview" style="max-width: 200px; margin-top: 10px; display: none;" />
                         </div>
 
                         <div class="form-group">
@@ -76,7 +95,7 @@
                                 <div class="row mb-3">
                                     @foreach (var image in Model.ProductImages)
                                     {
-                                        <div class="col-md-4 position-relative">
+                                        <div class="col-md-6 position-relative">
                                             <img src="@image.ImageUrl" alt="" class="img-fluid" />
                                             <button type="button" class="btn btn-danger btn-sm position-absolute"
                                                     style="top: 5px; right: 20px;"
@@ -87,7 +106,11 @@
                                     }
                                 </div>
                             }
-                            <input type="file" name="additionalImages" multiple class="form-control" accept="image/*" />
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="additionalImages" name="AdditionalImages" multiple accept="image/*" onchange="previewMultipleImages(this, 'additionalImagesPreview')" />
+                                <label class="custom-file-label" for="additionalImages">Thêm ảnh mới...</label>
+                            </div>
+                            <div id="additionalImagesPreview" class="row mt-2"></div>
                         </div>
                     </div>
                 </div>
@@ -108,6 +131,78 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     <script>
+        $(document).ready(function() {
+            // Hiển thị tên file đã chọn
+            $(".custom-file-input").on("change", function() {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            });
+
+            // Xử lý thêm size mới
+            $("#addSize").click(function() {
+                var index = $(".size-row").length;
+                var newRow = `
+                    <div class="row mb-2 size-row">
+                        <div class="col-md-5">
+                            <input name="ProductSizes[${index}].Size" class="form-control" placeholder="Size" />
+                        </div>
+                        <div class="col-md-5">
+                            <input name="ProductSizes[${index}].StockQuantity" class="form-control" placeholder="Số lượng" type="number" min="0" />
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-danger btn-remove-size">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>`;
+                $("#sizesContainer").append(newRow);
+            });
+
+            // Xử lý xóa size
+            $(document).on("click", ".btn-remove-size", function() {
+                $(this).closest(".size-row").remove();
+                // Cập nhật lại index cho các input
+                $(".size-row").each(function(index) {
+                    $(this).find("input").each(function() {
+                        var name = $(this).attr("name");
+                        if (name) {
+                            name = name.replace(/\[\d+\]/, `[${index}]`);
+                            $(this).attr("name", name);
+                        }
+                    });
+                });
+            });
+        });
+
+        // Preview ảnh chính
+        function previewImage(input, previewId) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#' + previewId).attr('src', e.target.result).show();
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Preview nhiều ảnh
+        function previewMultipleImages(input, previewId) {
+            var preview = $('#' + previewId);
+            preview.empty();
+
+            if (input.files) {
+                for (var i = 0; i < input.files.length; i++) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        var img = $('<div class="col-6 mb-2"><img src="' + e.target.result + '" class="img-fluid" /></div>');
+                        preview.append(img);
+                    }
+                    reader.readAsDataURL(input.files[i]);
+                }
+            }
+        }
+
+        // Xóa ảnh
         function deleteImage(imageId) {
             if (confirm('Bạn có chắc chắn muốn xóa ảnh này?')) {
                 $.ajax({

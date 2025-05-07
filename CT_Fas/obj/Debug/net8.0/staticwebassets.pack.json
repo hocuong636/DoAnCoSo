@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
+      "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\css\\auth.css",
+      "PackagePath": "staticwebassets\\css\\auth.css"
+    },
+    {
       "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -695,6 +699,30 @@
     {
       "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\product-min-03.jpg",
       "PackagePath": "staticwebassets\\images\\product-min-03.jpg"
+    },
+    {
+      "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg"
+    },
+    {
+      "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg"
+    },
+    {
+      "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg"
+    },
+    {
+      "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg"
+    },
+    {
+      "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg"
+    },
+    {
+      "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp",
+      "PackagePath": "staticwebassets\\images\\products\\d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp"
     },
     {
       "Id": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\slide-01.jpg",

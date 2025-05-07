@@ -18,6 +18,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\admin.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\auth.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CT_Fas</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CT_Fas</BasePath>
+      <RelativePath>css/auth.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pblnmmh9kd</Fingerprint>
+      <Integrity>S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\auth.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap.min.css'))">
       <SourceType>Package</SourceType>
       <SourceId>CT_Fas</SourceId>
@@ -3131,6 +3149,114 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\product-min-03.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CT_Fas</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CT_Fas</BasePath>
+      <RelativePath>images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pj3e6fngmh</Fingerprint>
+      <Integrity>iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CT_Fas</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CT_Fas</BasePath>
+      <RelativePath>images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tqo5qtk9dq</Fingerprint>
+      <Integrity>hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CT_Fas</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CT_Fas</BasePath>
+      <RelativePath>images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>26t4f1hdv8</Fingerprint>
+      <Integrity>VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CT_Fas</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CT_Fas</BasePath>
+      <RelativePath>images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hu0ng3qrm7</Fingerprint>
+      <Integrity>CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CT_Fas</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CT_Fas</BasePath>
+      <RelativePath>images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hu0ng3qrm7</Fingerprint>
+      <Integrity>CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CT_Fas</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CT_Fas</BasePath>
+      <RelativePath>images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>z3pbu0zaz8</Fingerprint>
+      <Integrity>3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\products\d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\slide-01.jpg'))">
       <SourceType>Package</SourceType>

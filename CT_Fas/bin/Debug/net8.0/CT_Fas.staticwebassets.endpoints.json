@@ -2387,6 +2387,88 @@
       ]
     },
     {
+      "Route": "css/auth.css",
+      "AssetFile": "css/auth.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1371"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 19:53:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE="
+        }
+      ]
+    },
+    {
+      "Route": "css/auth.pblnmmh9kd.css",
+      "AssetFile": "css/auth.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1371"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 19:53:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pblnmmh9kd"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE="
+        },
+        {
+          "Name": "label",
+          "Value": "css/auth.css"
+        }
+      ]
+    },
+    {
       "Route": "css/bootstrap.min.0u8lri5u94.css",
       "AssetFile": "css/bootstrap.min.css",
       "Selectors": [],
@@ -16487,6 +16569,498 @@
         {
           "Name": "label",
           "Value": "images/product-min-03.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg",
+      "AssetFile": "images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.pj3e6fngmh.jpg",
+      "AssetFile": "images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pj3e6fngmh"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg",
+      "AssetFile": "images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.tqo5qtk9dq.jpg",
+      "AssetFile": "images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqo5qtk9dq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.26t4f1hdv8.jpg",
+      "AssetFile": "images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26t4f1hdv8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg",
+      "AssetFile": "images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.hu0ng3qrm7.jpg",
+      "AssetFile": "images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:50:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu0ng3qrm7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg",
+      "AssetFile": "images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:50:58 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.hu0ng3qrm7.jpg",
+      "AssetFile": "images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:56:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu0ng3qrm7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg",
+      "AssetFile": "images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:56:51 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp",
+      "AssetFile": "images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:50:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.z3pbu0zaz8.webp",
+      "AssetFile": "images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:50:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3pbu0zaz8"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp"
         }
       ]
     },

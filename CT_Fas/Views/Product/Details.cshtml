@@ -69,9 +69,24 @@
                 <p class="mb-4">@Model.Description</p>
                 <div class="d-flex mb-3">
                     <strong class="text-dark mr-3">Kích thước:</strong>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        @Model.Size
-                    </div>
+                    <form id="sizeForm">
+                        <div class="d-flex flex-wrap">
+                            @foreach (var size in Model.ProductSizes.OrderBy(s => s.Size))
+                            {
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="size-@size.Size" name="size" value="@size.Size" required 
+                                           @(size.StockQuantity == 0 ? "disabled" : "")>
+                                    <label class="custom-control-label" for="size-@size.Size">
+                                        @size.Size (@size.StockQuantity)
+                                        @if (size.StockQuantity == 0)
+                                        {
+                                            <span class="text-danger">(Hết hàng)</span>
+                                        }
+                                    </label>
+                                </div>
+                            }
+                        </div>
+                    </form>
                 </div>
                 <div class="d-flex align-items-center mb-4 pt-2">
                     <div class="input-group quantity mr-3" style="width: 130px;">
@@ -155,17 +170,18 @@
                                 <div class="d-flex my-3">
                                     <p class="mb-0 mr-2">Xếp hạng * :</p>
                                     <div class="text-primary">
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star rating-star" data-rating="1"></i>
+                                        <i class="far fa-star rating-star" data-rating="2"></i>
+                                        <i class="far fa-star rating-star" data-rating="3"></i>
+                                        <i class="far fa-star rating-star" data-rating="4"></i>
+                                        <i class="far fa-star rating-star" data-rating="5"></i>
                                     </div>
                                 </div>
-                                <form>
+                                <form id="reviewForm">
+                                    <input type="hidden" id="rating" name="rating" value="0">
                                     <div class="form-group">
                                         <label for="message">Đánh giá của bạn *</label>
-                                        <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                                        <textarea id="message" name="message" cols="30" rows="5" class="form-control"></textarea>
                                     </div>
                                     <div class="form-group mb-0">
                                         <input type="submit" value="Gửi đánh giá" class="btn btn-primary px-3">
@@ -184,19 +200,29 @@
 @section Scripts {
     <script>
         function addToCart(productId) {
+            var selectedSize = $('input[name="size"]:checked').val();
+            if (!selectedSize) {
+                alert('Vui lòng chọn kích thước');
+                return;
+            }
+
             var quantity = $('.quantity input').val();
-            $.post('/Cart/AddToCart', { productId: productId, quantity: quantity })
-                .done(function (response) {
-                    if (response.success) {
-                        alert('Đã thêm sản phẩm vào giỏ hàng');
-                        updateCartCount();
-                    } else {
-                        alert(response.message);
-                    }
-                })
-                .fail(function () {
-                    alert('Có lỗi xảy ra. Vui lòng thử lại sau.');
-                });
+            $.post('/Cart/AddToCart', { 
+                productId: productId, 
+                quantity: quantity,
+                size: selectedSize 
+            })
+            .done(function (response) {
+                if (response.success) {
+                    alert('Đã thêm sản phẩm vào giỏ hàng');
+                    updateCartCount();
+                } else {
+                    alert(response.message);
+                }
+            })
+            .fail(function () {
+                alert('Có lỗi xảy ra. Vui lòng thử lại sau.');
+            });
         }
 
         function updateCartCount() {
@@ -207,6 +233,7 @@
         }
 
         $(document).ready(function () {
+            // Xử lý nút tăng giảm số lượng
             $('.quantity button').on('click', function () {
                 var button = $(this);
                 var oldValue = button.parent().parent().find('input').val();
@@ -220,6 +247,52 @@
                     }
                 }
                 button.parent().parent().find('input').val(newVal);
+            });
+
+            // Xử lý đánh giá sao
+            $('.rating-star').on('click', function() {
+                var rating = $(this).data('rating');
+                $('#rating').val(rating);
+                $('.rating-star').removeClass('fas').addClass('far');
+                $('.rating-star').each(function() {
+                    if ($(this).data('rating') <= rating) {
+                        $(this).removeClass('far').addClass('fas');
+                    }
+                });
+            });
+
+            // Xử lý gửi đánh giá
+            $('#reviewForm').on('submit', function(e) {
+                e.preventDefault();
+                var rating = $('#rating').val();
+                var message = $('#message').val();
+
+                if (rating == 0) {
+                    alert('Vui lòng chọn số sao đánh giá');
+                    return;
+                }
+
+                if (!message) {
+                    alert('Vui lòng nhập nội dung đánh giá');
+                    return;
+                }
+
+                $.post('/Product/AddReview', {
+                    productId: @Model.Id,
+                    rating: rating,
+                    comment: message
+                })
+                .done(function(response) {
+                    if (response.success) {
+                        alert('Cảm ơn bạn đã đánh giá sản phẩm');
+                        location.reload();
+                    } else {
+                        alert(response.message);
+                    }
+                })
+                .fail(function() {
+                    alert('Có lỗi xảy ra. Vui lòng thử lại sau.');
+                });
             });
         });
     </script>

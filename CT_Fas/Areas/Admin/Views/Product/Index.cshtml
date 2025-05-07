@@ -76,7 +76,7 @@
                             <th>Ảnh</th>
                             <th>@Html.DisplayNameFor(model => model.Name)</th>
                             <th>@Html.DisplayNameFor(model => model.Price)</th>
-                            <th>@Html.DisplayNameFor(model => model.StockQuantity)</th>
+                            <th>Tổng số lượng</th>
                             <th>@Html.DisplayNameFor(model => model.Category)</th>
                             <th style="width: 150px;">Thao tác</th>
                         </tr>
@@ -96,7 +96,7 @@
                                 </td>
                                 <td>@Html.DisplayFor(modelItem => item.Name)</td>
                                 <td>@Html.DisplayFor(modelItem => item.Price)</td>
-                                <td>@Html.DisplayFor(modelItem => item.StockQuantity)</td>
+                                <td>@item.ProductSizes.Sum(s => s.StockQuantity)</td>
                                 <td>@Html.DisplayFor(modelItem => item.Category.Name)</td>
                                 <td>
                                     <div class="btn-group" role="group">
@@ -144,7 +144,6 @@
             // Xử lý chọn từng mục
             $('.product-checkbox').change(function() {
                 updateBulkDeleteButton();
-                // Cập nhật trạng thái nút chọn tất cả
                 $('#selectAll').prop('checked', $('.product-checkbox:checked').length == $('.product-checkbox').length);
             });
 

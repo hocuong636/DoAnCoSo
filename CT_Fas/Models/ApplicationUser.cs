@@ -1,27 +1,22 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace CT_Fas.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        [Required]
+        [StringLength(100)]
         public string FullName { get; set; }
+
         public string Address { get; set; }
-        public DateTime DateOfBirth { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public bool IsActive { get; set; }
 
-        // Navigation properties
-        public ICollection<Order> Orders { get; set; }
-        public ICollection<Cart> Carts { get; set; }
-        public ICollection<ProductReview> ProductReviews { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-        public ApplicationUser()
-        {
-            CreatedDate = DateTime.Now;
-            IsActive = true;
-            Orders = new List<Order>();
-            Carts = new List<Cart>();
-            ProductReviews = new List<ProductReview>();
-        }
+        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Cart> Carts { get; set; }
+        public virtual ICollection<ProductReview> ProductReviews { get; set; }
     }
 }
