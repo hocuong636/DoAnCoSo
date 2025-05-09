@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fJ5ALlPCwfY1JV6UkBmcXkiDGW5hudqKSbO1nky/6Vc=",
+  "Hash": "kpqOPGsBFHvXpLvon8kqGBHE/phbBJ5DhdBgJJwRKyo=",
   "Source": "CT_Fas",
   "BasePath": "_content/CT_Fas",
   "Mode": "Default",
@@ -1338,6 +1338,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\css\\auth.css",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "css/auth#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pblnmmh9kd",
+      "Integrity": "S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\auth.css"
     },
     {
       "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\css\\bootstrap.min.css",
@@ -4950,6 +4971,657 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product-min-03.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\088056f8-5ab4-4871-acf4-69c1320c5880_Quần jean skinny.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/088056f8-5ab4-4871-acf4-69c1320c5880_Quần jean skinny#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "26t4f1hdv8",
+      "Integrity": "VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\088056f8-5ab4-4871-acf4-69c1320c5880_Quần jean skinny.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pj3e6fngmh",
+      "Integrity": "iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\29a1b9e2-6123-4f76-a104-4829b66c0cc8_Áo thun nam basic.webp",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/29a1b9e2-6123-4f76-a104-4829b66c0cc8_Áo thun nam basic#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3pbu0zaz8",
+      "Integrity": "3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\29a1b9e2-6123-4f76-a104-4829b66c0cc8_Áo thun nam basic.webp"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\2a1dde43-59a8-4bf5-adf7-71633fcdd27d_Áo thun nam basic.webp",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/2a1dde43-59a8-4bf5-adf7-71633fcdd27d_Áo thun nam basic#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3pbu0zaz8",
+      "Integrity": "3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\2a1dde43-59a8-4bf5-adf7-71633fcdd27d_Áo thun nam basic.webp"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tqo5qtk9dq",
+      "Integrity": "hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\320eaaed-ee8d-4f41-a803-097bdfb871b4_Quần jean skinny.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/320eaaed-ee8d-4f41-a803-097bdfb871b4_Quần jean skinny#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "26t4f1hdv8",
+      "Integrity": "VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\320eaaed-ee8d-4f41-a803-097bdfb871b4_Quần jean skinny.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\3b71dc62-f084-40fa-aa86-14e1f4ffae5f_Áo thun nữ crop top.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/3b71dc62-f084-40fa-aa86-14e1f4ffae5f_Áo thun nữ crop top#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tqo5qtk9dq",
+      "Integrity": "hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\3b71dc62-f084-40fa-aa86-14e1f4ffae5f_Áo thun nữ crop top.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\5788a397-beff-4441-aff0-c31e0b8bbc93_Áo thun nam basic.webp",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/5788a397-beff-4441-aff0-c31e0b8bbc93_Áo thun nam basic#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3pbu0zaz8",
+      "Integrity": "3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\5788a397-beff-4441-aff0-c31e0b8bbc93_Áo thun nam basic.webp"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\5abe4ce7-d22f-4467-a8e6-de684d7c946e_Áo thun nữ crop top.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/5abe4ce7-d22f-4467-a8e6-de684d7c946e_Áo thun nữ crop top#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tqo5qtk9dq",
+      "Integrity": "hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\5abe4ce7-d22f-4467-a8e6-de684d7c946e_Áo thun nữ crop top.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "26t4f1hdv8",
+      "Integrity": "VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\69764c41-f8fd-46a8-bedd-eb442c03c2ac_Váy liền thân.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/69764c41-f8fd-46a8-bedd-eb442c03c2ac_Váy liền thân#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pj3e6fngmh",
+      "Integrity": "iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\69764c41-f8fd-46a8-bedd-eb442c03c2ac_Váy liền thân.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\6e6ecdf0-1027-478e-bcf9-c9d62a73d2b9_Áo sơ mi trắng.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/6e6ecdf0-1027-478e-bcf9-c9d62a73d2b9_Áo sơ mi trắng#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hu0ng3qrm7",
+      "Integrity": "CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\6e6ecdf0-1027-478e-bcf9-c9d62a73d2b9_Áo sơ mi trắng.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hu0ng3qrm7",
+      "Integrity": "CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\9c8bd10b-285f-4506-a400-a653afb70f58_Váy liền thân.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/9c8bd10b-285f-4506-a400-a653afb70f58_Váy liền thân#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pj3e6fngmh",
+      "Integrity": "iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\9c8bd10b-285f-4506-a400-a653afb70f58_Váy liền thân.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\a309ea15-b161-4cd8-aee3-dce188c52a67_Áo thun nữ crop top.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/a309ea15-b161-4cd8-aee3-dce188c52a67_Áo thun nữ crop top#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tqo5qtk9dq",
+      "Integrity": "hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\a309ea15-b161-4cd8-aee3-dce188c52a67_Áo thun nữ crop top.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\a61fef9b-e930-4519-8bb9-0d9cd133d31b_Quần jean skinny.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/a61fef9b-e930-4519-8bb9-0d9cd133d31b_Quần jean skinny#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "26t4f1hdv8",
+      "Integrity": "VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\a61fef9b-e930-4519-8bb9-0d9cd133d31b_Quần jean skinny.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\b2a7fd3b-ab1a-4ef3-ac2e-2b7f53e4ee26_Áo thun nam basic.webp",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/b2a7fd3b-ab1a-4ef3-ac2e-2b7f53e4ee26_Áo thun nam basic#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3pbu0zaz8",
+      "Integrity": "3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\b2a7fd3b-ab1a-4ef3-ac2e-2b7f53e4ee26_Áo thun nam basic.webp"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\b62b9b6d-8305-4fc4-a8ba-8c15e6e8d8a8_Áo thun nữ crop top.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/b62b9b6d-8305-4fc4-a8ba-8c15e6e8d8a8_Áo thun nữ crop top#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tqo5qtk9dq",
+      "Integrity": "hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\b62b9b6d-8305-4fc4-a8ba-8c15e6e8d8a8_Áo thun nữ crop top.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\b9f5a659-d140-4a68-8fd5-902e65caea0e_Áo thun nam basic.webp",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/b9f5a659-d140-4a68-8fd5-902e65caea0e_Áo thun nam basic#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3pbu0zaz8",
+      "Integrity": "3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\b9f5a659-d140-4a68-8fd5-902e65caea0e_Áo thun nam basic.webp"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\bd7085c1-a8f3-49d0-a7ba-040b1b473ef1_Váy liền thân.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/bd7085c1-a8f3-49d0-a7ba-040b1b473ef1_Váy liền thân#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pj3e6fngmh",
+      "Integrity": "iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\bd7085c1-a8f3-49d0-a7ba-040b1b473ef1_Váy liền thân.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hu0ng3qrm7",
+      "Integrity": "CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\c166ac00-aa0d-40d1-9a14-d5f856abdb35_Áo sơ mi trắng.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/c166ac00-aa0d-40d1-9a14-d5f856abdb35_Áo sơ mi trắng#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hu0ng3qrm7",
+      "Integrity": "CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\c166ac00-aa0d-40d1-9a14-d5f856abdb35_Áo sơ mi trắng.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\c63560fb-57b4-4f8c-bacc-856429000144_Quần jean skinny.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/c63560fb-57b4-4f8c-bacc-856429000144_Quần jean skinny#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "26t4f1hdv8",
+      "Integrity": "VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\c63560fb-57b4-4f8c-bacc-856429000144_Quần jean skinny.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z3pbu0zaz8",
+      "Integrity": "3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\da05fbc9-8973-4c27-a8c7-de076ffe38b0_Váy liền thân.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/da05fbc9-8973-4c27-a8c7-de076ffe38b0_Váy liền thân#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pj3e6fngmh",
+      "Integrity": "iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\da05fbc9-8973-4c27-a8c7-de076ffe38b0_Váy liền thân.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\df50ae16-e992-44b2-810d-a06348341ea3_Váy liền thân.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/df50ae16-e992-44b2-810d-a06348341ea3_Váy liền thân#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pj3e6fngmh",
+      "Integrity": "iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\df50ae16-e992-44b2-810d-a06348341ea3_Váy liền thân.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\eb6ab2b6-8040-4353-8edf-71100e46d090_Áo sơ mi trắng.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/eb6ab2b6-8040-4353-8edf-71100e46d090_Áo sơ mi trắng#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hu0ng3qrm7",
+      "Integrity": "CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\eb6ab2b6-8040-4353-8edf-71100e46d090_Áo sơ mi trắng.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\ed08d3b2-6218-4b03-9281-ece6cb60dd48_Áo sơ mi trắng.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/ed08d3b2-6218-4b03-9281-ece6cb60dd48_Áo sơ mi trắng#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hu0ng3qrm7",
+      "Integrity": "CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\ed08d3b2-6218-4b03-9281-ece6cb60dd48_Áo sơ mi trắng.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\f30ffa2d-8513-4893-a9e3-9633b769615a_Áo sơ mi trắng.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/f30ffa2d-8513-4893-a9e3-9633b769615a_Áo sơ mi trắng#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hu0ng3qrm7",
+      "Integrity": "CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\f30ffa2d-8513-4893-a9e3-9633b769615a_Áo sơ mi trắng.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\f455836a-e235-45f2-b588-33aba94b4a6f_Áo thun nữ crop top.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/f455836a-e235-45f2-b588-33aba94b4a6f_Áo thun nữ crop top#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tqo5qtk9dq",
+      "Integrity": "hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\f455836a-e235-45f2-b588-33aba94b4a6f_Áo thun nữ crop top.jpg"
+    },
+    {
+      "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\f5b8e36a-f2c8-4fa8-a215-0c1acc306435_Quần jean skinny.jpg",
+      "SourceId": "CT_Fas",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\",
+      "BasePath": "_content/CT_Fas",
+      "RelativePath": "images/products/f5b8e36a-f2c8-4fa8-a215-0c1acc306435_Quần jean skinny#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "26t4f1hdv8",
+      "Integrity": "VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\f5b8e36a-f2c8-4fa8-a215-0c1acc306435_Quần jean skinny.jpg"
     },
     {
       "Identity": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\slide-01.jpg",
@@ -8728,6 +9400,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-C6A5hDnIX6rsyMn2JtFxCPdlbdL5C7fVdWLH5FrEpzM="
+        }
+      ]
+    },
+    {
+      "Route": "css/auth.css",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\css\\auth.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1371"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 19:53:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE="
+        }
+      ]
+    },
+    {
+      "Route": "css/auth.pblnmmh9kd.css",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\css\\auth.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1371"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 19:53:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pblnmmh9kd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/auth.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S/ZY7FBDUXuxdlFlrlsBLltQesIXP9avXBYGUcAvfCE="
         }
       ]
     },
@@ -25216,6 +25970,2548 @@
         {
           "Name": "integrity",
           "Value": "sha256-pLwqSVhwMUK549UKOkV6hdSqf02pApG9sVv1m3zLQwI="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/088056f8-5ab4-4871-acf4-69c1320c5880_Quần jean skinny.26t4f1hdv8.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\088056f8-5ab4-4871-acf4-69c1320c5880_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26t4f1hdv8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/088056f8-5ab4-4871-acf4-69c1320c5880_Quần jean skinny.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/088056f8-5ab4-4871-acf4-69c1320c5880_Quần jean skinny.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\088056f8-5ab4-4871-acf4-69c1320c5880_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.pj3e6fngmh.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pj3e6fngmh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/29a1b9e2-6123-4f76-a104-4829b66c0cc8_Áo thun nam basic.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\29a1b9e2-6123-4f76-a104-4829b66c0cc8_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/29a1b9e2-6123-4f76-a104-4829b66c0cc8_Áo thun nam basic.z3pbu0zaz8.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\29a1b9e2-6123-4f76-a104-4829b66c0cc8_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3pbu0zaz8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/29a1b9e2-6123-4f76-a104-4829b66c0cc8_Áo thun nam basic.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/2a1dde43-59a8-4bf5-adf7-71633fcdd27d_Áo thun nam basic.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\2a1dde43-59a8-4bf5-adf7-71633fcdd27d_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/2a1dde43-59a8-4bf5-adf7-71633fcdd27d_Áo thun nam basic.z3pbu0zaz8.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\2a1dde43-59a8-4bf5-adf7-71633fcdd27d_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3pbu0zaz8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/2a1dde43-59a8-4bf5-adf7-71633fcdd27d_Áo thun nam basic.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.tqo5qtk9dq.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqo5qtk9dq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/320eaaed-ee8d-4f41-a803-097bdfb871b4_Quần jean skinny.26t4f1hdv8.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\320eaaed-ee8d-4f41-a803-097bdfb871b4_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26t4f1hdv8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/320eaaed-ee8d-4f41-a803-097bdfb871b4_Quần jean skinny.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/320eaaed-ee8d-4f41-a803-097bdfb871b4_Quần jean skinny.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\320eaaed-ee8d-4f41-a803-097bdfb871b4_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3b71dc62-f084-40fa-aa86-14e1f4ffae5f_Áo thun nữ crop top.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\3b71dc62-f084-40fa-aa86-14e1f4ffae5f_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/3b71dc62-f084-40fa-aa86-14e1f4ffae5f_Áo thun nữ crop top.tqo5qtk9dq.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\3b71dc62-f084-40fa-aa86-14e1f4ffae5f_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqo5qtk9dq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/3b71dc62-f084-40fa-aa86-14e1f4ffae5f_Áo thun nữ crop top.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/5788a397-beff-4441-aff0-c31e0b8bbc93_Áo thun nam basic.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\5788a397-beff-4441-aff0-c31e0b8bbc93_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/5788a397-beff-4441-aff0-c31e0b8bbc93_Áo thun nam basic.z3pbu0zaz8.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\5788a397-beff-4441-aff0-c31e0b8bbc93_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3pbu0zaz8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/5788a397-beff-4441-aff0-c31e0b8bbc93_Áo thun nam basic.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/5abe4ce7-d22f-4467-a8e6-de684d7c946e_Áo thun nữ crop top.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\5abe4ce7-d22f-4467-a8e6-de684d7c946e_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/5abe4ce7-d22f-4467-a8e6-de684d7c946e_Áo thun nữ crop top.tqo5qtk9dq.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\5abe4ce7-d22f-4467-a8e6-de684d7c946e_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqo5qtk9dq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/5abe4ce7-d22f-4467-a8e6-de684d7c946e_Áo thun nữ crop top.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.26t4f1hdv8.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26t4f1hdv8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:51:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/69764c41-f8fd-46a8-bedd-eb442c03c2ac_Váy liền thân.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\69764c41-f8fd-46a8-bedd-eb442c03c2ac_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 04:29:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/69764c41-f8fd-46a8-bedd-eb442c03c2ac_Váy liền thân.pj3e6fngmh.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\69764c41-f8fd-46a8-bedd-eb442c03c2ac_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 04:29:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pj3e6fngmh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/69764c41-f8fd-46a8-bedd-eb442c03c2ac_Váy liền thân.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/6e6ecdf0-1027-478e-bcf9-c9d62a73d2b9_Áo sơ mi trắng.hu0ng3qrm7.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\6e6ecdf0-1027-478e-bcf9-c9d62a73d2b9_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu0ng3qrm7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/6e6ecdf0-1027-478e-bcf9-c9d62a73d2b9_Áo sơ mi trắng.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/6e6ecdf0-1027-478e-bcf9-c9d62a73d2b9_Áo sơ mi trắng.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\6e6ecdf0-1027-478e-bcf9-c9d62a73d2b9_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.hu0ng3qrm7.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu0ng3qrm7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/9c8bd10b-285f-4506-a400-a653afb70f58_Váy liền thân.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\9c8bd10b-285f-4506-a400-a653afb70f58_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/9c8bd10b-285f-4506-a400-a653afb70f58_Váy liền thân.pj3e6fngmh.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\9c8bd10b-285f-4506-a400-a653afb70f58_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pj3e6fngmh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/9c8bd10b-285f-4506-a400-a653afb70f58_Váy liền thân.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/a309ea15-b161-4cd8-aee3-dce188c52a67_Áo thun nữ crop top.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\a309ea15-b161-4cd8-aee3-dce188c52a67_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/a309ea15-b161-4cd8-aee3-dce188c52a67_Áo thun nữ crop top.tqo5qtk9dq.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\a309ea15-b161-4cd8-aee3-dce188c52a67_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqo5qtk9dq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/a309ea15-b161-4cd8-aee3-dce188c52a67_Áo thun nữ crop top.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/a61fef9b-e930-4519-8bb9-0d9cd133d31b_Quần jean skinny.26t4f1hdv8.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\a61fef9b-e930-4519-8bb9-0d9cd133d31b_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26t4f1hdv8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/a61fef9b-e930-4519-8bb9-0d9cd133d31b_Quần jean skinny.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/a61fef9b-e930-4519-8bb9-0d9cd133d31b_Quần jean skinny.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\a61fef9b-e930-4519-8bb9-0d9cd133d31b_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/b2a7fd3b-ab1a-4ef3-ac2e-2b7f53e4ee26_Áo thun nam basic.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\b2a7fd3b-ab1a-4ef3-ac2e-2b7f53e4ee26_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/b2a7fd3b-ab1a-4ef3-ac2e-2b7f53e4ee26_Áo thun nam basic.z3pbu0zaz8.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\b2a7fd3b-ab1a-4ef3-ac2e-2b7f53e4ee26_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3pbu0zaz8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/b2a7fd3b-ab1a-4ef3-ac2e-2b7f53e4ee26_Áo thun nam basic.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/b62b9b6d-8305-4fc4-a8ba-8c15e6e8d8a8_Áo thun nữ crop top.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\b62b9b6d-8305-4fc4-a8ba-8c15e6e8d8a8_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/b62b9b6d-8305-4fc4-a8ba-8c15e6e8d8a8_Áo thun nữ crop top.tqo5qtk9dq.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\b62b9b6d-8305-4fc4-a8ba-8c15e6e8d8a8_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqo5qtk9dq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/b62b9b6d-8305-4fc4-a8ba-8c15e6e8d8a8_Áo thun nữ crop top.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/b9f5a659-d140-4a68-8fd5-902e65caea0e_Áo thun nam basic.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\b9f5a659-d140-4a68-8fd5-902e65caea0e_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 04:26:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/b9f5a659-d140-4a68-8fd5-902e65caea0e_Áo thun nam basic.z3pbu0zaz8.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\b9f5a659-d140-4a68-8fd5-902e65caea0e_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 04:26:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3pbu0zaz8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/b9f5a659-d140-4a68-8fd5-902e65caea0e_Áo thun nam basic.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bd7085c1-a8f3-49d0-a7ba-040b1b473ef1_Váy liền thân.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\bd7085c1-a8f3-49d0-a7ba-040b1b473ef1_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bd7085c1-a8f3-49d0-a7ba-040b1b473ef1_Váy liền thân.pj3e6fngmh.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\bd7085c1-a8f3-49d0-a7ba-040b1b473ef1_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pj3e6fngmh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/bd7085c1-a8f3-49d0-a7ba-040b1b473ef1_Váy liền thân.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.hu0ng3qrm7.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:56:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu0ng3qrm7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:56:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/c166ac00-aa0d-40d1-9a14-d5f856abdb35_Áo sơ mi trắng.hu0ng3qrm7.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\c166ac00-aa0d-40d1-9a14-d5f856abdb35_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu0ng3qrm7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/c166ac00-aa0d-40d1-9a14-d5f856abdb35_Áo sơ mi trắng.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/c166ac00-aa0d-40d1-9a14-d5f856abdb35_Áo sơ mi trắng.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\c166ac00-aa0d-40d1-9a14-d5f856abdb35_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/c63560fb-57b4-4f8c-bacc-856429000144_Quần jean skinny.26t4f1hdv8.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\c63560fb-57b4-4f8c-bacc-856429000144_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26t4f1hdv8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/c63560fb-57b4-4f8c-bacc-856429000144_Quần jean skinny.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/c63560fb-57b4-4f8c-bacc-856429000144_Quần jean skinny.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\c63560fb-57b4-4f8c-bacc-856429000144_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:50:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.z3pbu0zaz8.webp",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 18:50:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z3pbu0zaz8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3+G5RpLhXVM5JlyBnXK8A8yX3pe4khEqhsUx0TEyyME="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/da05fbc9-8973-4c27-a8c7-de076ffe38b0_Váy liền thân.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\da05fbc9-8973-4c27-a8c7-de076ffe38b0_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/da05fbc9-8973-4c27-a8c7-de076ffe38b0_Váy liền thân.pj3e6fngmh.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\da05fbc9-8973-4c27-a8c7-de076ffe38b0_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:33:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pj3e6fngmh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/da05fbc9-8973-4c27-a8c7-de076ffe38b0_Váy liền thân.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/df50ae16-e992-44b2-810d-a06348341ea3_Váy liền thân.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\df50ae16-e992-44b2-810d-a06348341ea3_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/df50ae16-e992-44b2-810d-a06348341ea3_Váy liền thân.pj3e6fngmh.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\df50ae16-e992-44b2-810d-a06348341ea3_Váy liền thân.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pj3e6fngmh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/df50ae16-e992-44b2-810d-a06348341ea3_Váy liền thân.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iyRkrx/akMW116GCNFQ1uiACj6cE0xaIA03v9OTyp9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/eb6ab2b6-8040-4353-8edf-71100e46d090_Áo sơ mi trắng.hu0ng3qrm7.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\eb6ab2b6-8040-4353-8edf-71100e46d090_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu0ng3qrm7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/eb6ab2b6-8040-4353-8edf-71100e46d090_Áo sơ mi trắng.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/eb6ab2b6-8040-4353-8edf-71100e46d090_Áo sơ mi trắng.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\eb6ab2b6-8040-4353-8edf-71100e46d090_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ed08d3b2-6218-4b03-9281-ece6cb60dd48_Áo sơ mi trắng.hu0ng3qrm7.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\ed08d3b2-6218-4b03-9281-ece6cb60dd48_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu0ng3qrm7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/ed08d3b2-6218-4b03-9281-ece6cb60dd48_Áo sơ mi trắng.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/ed08d3b2-6218-4b03-9281-ece6cb60dd48_Áo sơ mi trắng.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\ed08d3b2-6218-4b03-9281-ece6cb60dd48_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 12:22:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/f30ffa2d-8513-4893-a9e3-9633b769615a_Áo sơ mi trắng.hu0ng3qrm7.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\f30ffa2d-8513-4893-a9e3-9633b769615a_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hu0ng3qrm7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/f30ffa2d-8513-4893-a9e3-9633b769615a_Áo sơ mi trắng.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/f30ffa2d-8513-4893-a9e3-9633b769615a_Áo sơ mi trắng.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\f30ffa2d-8513-4893-a9e3-9633b769615a_Áo sơ mi trắng.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38113"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:37:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CcDUyiukkYV4mx3/uUVEbD17yZMTicKafYTF+wCjqpM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/f455836a-e235-45f2-b588-33aba94b4a6f_Áo thun nữ crop top.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\f455836a-e235-45f2-b588-33aba94b4a6f_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 04:27:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/f455836a-e235-45f2-b588-33aba94b4a6f_Áo thun nữ crop top.tqo5qtk9dq.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\f455836a-e235-45f2-b588-33aba94b4a6f_Áo thun nữ crop top.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 04:27:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqo5qtk9dq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/f455836a-e235-45f2-b588-33aba94b4a6f_Áo thun nữ crop top.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hXoVrrxkh9JWcbYbZZO2QexPS68PCwGMvtkLGXYh22o="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/f5b8e36a-f2c8-4fa8-a215-0c1acc306435_Quần jean skinny.26t4f1hdv8.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\f5b8e36a-f2c8-4fa8-a215-0c1acc306435_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 04:28:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26t4f1hdv8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/f5b8e36a-f2c8-4fa8-a215-0c1acc306435_Quần jean skinny.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/f5b8e36a-f2c8-4fa8-a215-0c1acc306435_Quần jean skinny.jpg",
+      "AssetFile": "D:\\ĐACS\\CT_Fas\\CT_Fas\\wwwroot\\images\\products\\f5b8e36a-f2c8-4fa8-a215-0c1acc306435_Quần jean skinny.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "577643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 04:28:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VjDZ+txPV8G+ifUFI8HY/T6R3tgqMGgGgIshVHQDY+I="
         }
       ]
     },

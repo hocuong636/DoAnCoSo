@@ -1,0 +1,117 @@
+@model IEnumerable<CT_Fas.Models.Product>
+
+@{
+    ViewData["Title"] = "Sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .product-img-container {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .out-of-stock {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        background-color: rgba(255, 0, 0, 0.7);
+        color: white;
+        padding: 10px 50px;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+</style>
+
+<!-- Product -->
+<div class="bg0 m-t-23 p-b-140">
+    <div class="container">
+        <div class="flex-w flex-sb-m p-b-52">
+            <div class="flex-w flex-l-m filter-tope-group m-tb-10">
+                <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
+                    Tất cả sản phẩm
+                </button>
+            </div>
+
+            <div class="flex-w flex-c-m m-tb-10">
+                <div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
+                    <i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
+                    <i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+                    Tìm kiếm
+                </div>
+            </div>
+            
+            <!-- Search product -->
+            <div class="dis-none panel-search w-full p-t-10 p-b-15">
+                <form method="get" action="@Url.Action("Search", "Product")">
+                    <div class="bor8 dis-flex p-l-15">
+                        <button type="submit" class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
+                            <i class="zmdi zmdi-search"></i>
+                        </button>
+                        <input class="mtext-107 cl2 size-114 plh2 p-r-15" type="text" name="searchString" placeholder="Tìm kiếm">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row isotope-grid">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
+                    <!-- Block2 -->
+                    <div class="block2">
+                        <div class="block2-pic hov-img0">
+                            <div class="product-img-container">
+                                @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                {
+                                    <img src="@item.ImageUrl" alt="@item.Name" class="product-img">
+                                    @if(item.ProductSizes.Sum(s => s.StockQuantity) == 0)
+                                    {
+                                        <div class="out-of-stock">Hết hàng</div>
+                                    }
+                                }
+                                else if (item.ProductImages.Any())
+                                {
+                                    <img src="@item.ProductImages.First().ImageUrl" alt="@item.Name" class="product-img">
+                                }
+                                @if(item.ProductSizes.Sum(s => s.StockQuantity) == 0)
+                                {
+                                    <div class="out-of-stock ">Hết hàng</div>
+                                }
+                            </div>
+
+                            <a href="@Url.Action("Details", "Product", new { id = item.Id })" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+                                Xem chi tiết
+                            </a>
+                        </div>
+
+                        <div class="block2-txt flex-w flex-t p-t-14">
+                            <div class="block2-txt-child1 flex-col-l">
+                                <a href="@Url.Action("Details", "Product", new { id = item.Id})" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                    @item.Name
+                                </a>
+
+                                <span class="stext-105 cl3">
+                                    @item.Price.ToString("N0") VNĐ
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

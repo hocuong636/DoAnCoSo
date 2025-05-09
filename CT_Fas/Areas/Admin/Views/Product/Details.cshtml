@@ -7,7 +7,7 @@
 
 <div class="container-fluid">
     <h1 class="h3 mb-2 text-gray-800">Chi tiết sản phẩm</h1>
-    
+
     <div class="card shadow mb-4">
         <div class="card-body">
             <div class="row">
@@ -19,20 +19,53 @@
                         <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Price)</dt>
                         <dd class="col-sm-8">@Html.DisplayFor(model => model.Price)</dd>
 
-                        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.StockQuantity)</dt>
-                        <dd class="col-sm-8">@Html.DisplayFor(model => model.StockQuantity)</dd>
-
                         <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Brand)</dt>
                         <dd class="col-sm-8">@Html.DisplayFor(model => model.Brand)</dd>
-
-                        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Size)</dt>
-                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Size)</dd>
 
                         <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Category)</dt>
                         <dd class="col-sm-8">@Html.DisplayFor(model => model.Category.Name)</dd>
 
                         <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Description)</dt>
                         <dd class="col-sm-8">@Html.DisplayFor(model => model.Description)</dd>
+
+                        <dt class="col-sm-12 mt-3 mb-2">Sizes và số lượng:</dt>
+                        <dd class="col-sm-12">
+                            <table class="table table-bordered table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Size</th>
+                                        <th>Số lượng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model.ProductSizes != null && Model.ProductSizes.Any())
+                                    {
+                                        foreach (var productSize in Model.ProductSizes)
+                                        {
+                                            <tr>
+                                                <td>@productSize.Size</td>
+                                                <td>@productSize.StockQuantity</td>
+                                            </tr>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <tr>
+                                            <td colspan="2" class="text-center">Chưa có thông tin size và số lượng</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                                @if (Model.ProductSizes != null && Model.ProductSizes.Any())
+                                {
+                                    <tfoot>
+                                        <tr>
+                                            <th>Tổng số lượng:</th>
+                                            <th>@Model.ProductSizes.Sum(s => s.StockQuantity)</th>
+                                        </tr>
+                                    </tfoot>
+                                }
+                            </table>
+                        </dd>
                     </dl>
                 </div>
                 <div class="col-md-6">

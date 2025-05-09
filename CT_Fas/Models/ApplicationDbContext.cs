@@ -18,6 +18,7 @@ namespace CT_Fas.Models
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<ProductReview> ProductReviews { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<ProductSize> ProductSizes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -28,6 +29,13 @@ namespace CT_Fas.Models
                 .HasOne(p => p.Category)
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Thiết lập quan hệ giữa Product và ProductSize
+            modelBuilder.Entity<ProductSize>()
+                .HasOne(ps => ps.Product)
+                .WithMany(p => p.ProductSizes)
+                .HasForeignKey(ps => ps.ProductId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Thiết lập quan hệ giữa Order và OrderDetail
@@ -70,6 +78,13 @@ namespace CT_Fas.Models
                 .HasOne(ci => ci.Product)
                 .WithMany(p => p.CartItems)
                 .HasForeignKey(ci => ci.ProductId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Thiết lập quan hệ giữa CartItem và ProductSize
+            modelBuilder.Entity<CartItem>()
+                .HasOne(ci => ci.Size)
+                .WithMany()
+                .HasForeignKey(ci => ci.SizeId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             // Thiết lập quan hệ giữa Product và ProductReview

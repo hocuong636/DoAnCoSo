@@ -126,7 +126,6 @@ D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\staticwebassets\msbuild.build.CT_Fas.pro
 D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CT_Fas.props
 D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CT_Fas.props
 D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\staticwebassets.pack.json
-D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\CT_Fas.csproj.Up2Date
 D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\CT_Fas.dll
 D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\refint\CT_Fas.dll
@@ -265,3 +264,4 @@ D:\ĐACS\CT_Fas\CT_Fas\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\ĐACS\CT_Fas\CT_Fas\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\ĐACS\CT_Fas\CT_Fas\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\CT_Fas.MvcApplicationPartsAssemblyInfo.cs
+D:\ĐACS\CT_Fas\CT_Fas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

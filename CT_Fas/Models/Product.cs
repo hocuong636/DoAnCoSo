@@ -22,14 +22,8 @@ namespace CT_Fas.Models
         [Display(Name = "Hình ảnh")]
         public string ImageUrl { get; set; }
 
-        [Display(Name = "Số lượng trong kho")]
-        public int StockQuantity { get; set; }
-
         [Display(Name = "Thương hiệu")]
         public string Brand { get; set; }
-
-        [Display(Name = "Kích thước")]
-        public string Size { get; set; }
 
         [Display(Name = "Còn hoạt động")]
         public bool IsActive { get; set; } = true;
@@ -47,6 +41,7 @@ namespace CT_Fas.Models
         public ICollection<CartItem> CartItems { get; set; }
         public ICollection<ProductReview> ProductReviews { get; set; }
         public ICollection<ProductImage> ProductImages { get; set; }
+        public ICollection<ProductSize> ProductSizes { get; set; }
 
         public Product()
         {
@@ -54,6 +49,7 @@ namespace CT_Fas.Models
             CartItems = new List<CartItem>();
             ProductReviews = new List<ProductReview>();
             ProductImages = new List<ProductImage>();
+            ProductSizes = new List<ProductSize>();
         }
     }
 }

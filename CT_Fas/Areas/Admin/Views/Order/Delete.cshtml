@@ -1,0 +1,77 @@
+@model CT_Fas.Models.Order
+@using CT_Fas.Models
+
+@{
+    ViewData["Title"] = "Xóa đơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <h2 class="mt-4">Xác nhận xóa đơn hàng</h2>
+
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading"><i class="fas fa-exclamation-triangle"></i> Cảnh báo!</h4>
+        <p>Bạn có chắc chắn muốn xóa đơn hàng này? Hành động này không thể hoàn tác.</p>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-info-circle mr-1"></i>
+            Thông tin đơn hàng #@Model.OrderId
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Khách hàng:</dt>
+                <dd class="col-sm-9">@Model.CustomerName</dd>
+
+                <dt class="col-sm-3">Ngày đặt:</dt>
+                <dd class="col-sm-9">@Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</dd>
+
+                <dt class="col-sm-3">Tổng tiền:</dt>
+                <dd class="col-sm-9">@Model.TotalAmount.ToString("#,##0") ₫</dd>
+
+                <dt class="col-sm-3">Trạng thái:</dt>
+                <dd class="col-sm-9">
+                    <span class="badge" style="background-color: @GetStatusColor(Model.Status)">
+                        @Model.Status.GetDisplayName()
+                    </span>
+                </dd>
+
+                <dt class="col-sm-3">Địa chỉ:</dt>
+                <dd class="col-sm-9">@Model.Address</dd>
+
+                <dt class="col-sm-3">Số điện thoại:</dt>
+                <dd class="col-sm-9">@Model.Phone</dd>
+            </dl>
+        </div>
+    </div>
+
+    <form asp-action="Delete" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="OrderId" />
+        <div class="form-group">
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Quay lại
+            </a>
+            <button type="submit" class="btn btn-danger">
+                <i class="fas fa-trash"></i> Xác nhận xóa
+            </button>
+        </div>
+    </form>
+</div>
+
+@functions {
+    public string GetStatusColor(OrderStatus status)
+    {
+        return status switch
+        {
+            OrderStatus.Pending => "#ffc107",    // Vàng
+            OrderStatus.Confirmed => "#17a2b8",  // Xanh dương
+            OrderStatus.Shipping => "#007bff",   // Xanh da trời
+            OrderStatus.Delivered => "#28a745",  // Xanh lá
+            OrderStatus.Cancelled => "#dc3545",  // Đỏ
+            OrderStatus.Returned => "#6c757d",   // Xám
+            _ => "#ffffff"                       // Trắng
+        };
+    }
+}

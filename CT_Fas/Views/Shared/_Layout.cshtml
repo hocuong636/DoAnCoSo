@@ -1,50 +1,132 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CT_Fas</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/CT_Fas.styles.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - CT Fashion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="~/images/icons/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="~/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/fonts/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="~/fonts/linearicons-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/MagnificPopup/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="~/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="~/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/css/main.css">
+    <link rel="stylesheet" type="text/css" href="~/css/auth.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CT_Fas</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+<body class="animsition">
+    <!-- Header -->
+    <header class="header-v2">
+        <!-- Header desktop -->
+        <div class="container-menu-desktop trans-03">
+            <div class="wrap-menu-desktop">
+                <nav class="limiter-menu-desktop p-l-45">
+                    <!-- Logo desktop -->        
+                    <a href="@Url.Action("Index", "Home")" class="logo">
+                        <img src="~/images/icons/logo-01.png" alt="IMG-LOGO">
+                    </a>
+
+                    <!-- Menu desktop -->
+                    <div class="menu-desktop">
+                        <ul class="main-menu">
+                            <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Home" && ViewContext.RouteData.Values["action"].ToString() == "Index" ? "active-menu" : "")">
+                                <a href="@Url.Action("Index", "Home")">Trang chủ</a>
+                            </li>
+                            <li class="label1 @(ViewContext.RouteData.Values["controller"].ToString() == "Product" ? "active-menu" : "")" data-label1="hot">
+                                <a href="@Url.Action("Index", "Product")">Sản phẩm</a>
+                            </li>
+                            <li class="label1 @(ViewContext.RouteData.Values["action"].ToString() == "Features" ? "active-menu" : "")" data-label1="hot">
+                                <a href="@Url.Action("Features", "Home")">Đặc sắc</a>
+                            </li>
+                            <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Blog" ? "active-menu" : "")">
+                                <a href="@Url.Action("Index", "Blog")">Blog</a>
+                            </li>
+                            <li class="@(ViewContext.RouteData.Values["action"].ToString() == "About" ? "active-menu" : "")">
+                                <a href="@Url.Action("About", "Home")">Về chúng tôi</a>
+                            </li>
+                            <li class="@(ViewContext.RouteData.Values["action"].ToString() == "Contact" ? "active-menu" : "")">
+                                <a href="@Url.Action("Contact", "Home")">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>    
+
+                    <!-- Icon header -->
+                    <div class="wrap-icon-header flex-w flex-r-m h-full">
+                        @await Html.PartialAsync("_LoginPartial")
+
+                        <div class="flex-c-m h-full p-r-24">
+                            <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
+                                <i class="zmdi zmdi-search"></i>
+                            </div>
+                        </div>
+                            
+                        <div class="flex-c-m h-full p-l-18 p-r-25 bor5">
+                            <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-cart">
+                                <i class="zmdi zmdi-shopping-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>    
+        </div>
+
+        <!-- Header Mobile -->
+        @await Html.PartialAsync("_HeaderMobile")
+
+        <!-- Modal Search -->
+        <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+            <div class="container-search-header">
+                <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+                    <img src="~/images/icons/icon-close2.png" alt="CLOSE">
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-					<partial name="_LoginPartial" />
-                </div>
+                <form class="wrap-search-header flex-w p-l-15">
+                    <button class="flex-c-m trans-04">
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+                    <input class="plh3" type="text" name="search" placeholder="Tìm kiếm...">
+                </form>
             </div>
-        </nav>
+        </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    @await Component.InvokeAsync("Cart")
+
+    <!-- Main content -->
+    @RenderBody()
+
+    <!-- Footer -->
+    @await Html.PartialAsync("_Footer")
+
+    <!-- Back to top -->
+    <div class="btn-back-to-top" id="myBtn">
+        <span class="symbol-btn-back-to-top">
+            <i class="zmdi zmdi-chevron-up"></i>
+        </span>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - CT_Fas - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- Scripts -->
+    <script src="~/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="~/vendor/animsition/js/animsition.min.js"></script>
+    <script src="~/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/vendor/select2/select2.min.js"></script>
+    <script src="~/vendor/daterangepicker/moment.min.js"></script>
+    <script src="~/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="~/vendor/slick/slick.min.js"></script>
+    <script src="~/js/slick-custom.js"></script>
+    <script src="~/vendor/parallax100/parallax100.js"></script>
+    <script src="~/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+    <script src="~/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="~/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="~/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="~/js/main.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
