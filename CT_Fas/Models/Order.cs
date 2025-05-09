@@ -5,7 +5,7 @@ namespace CT_Fas.Models
 {
     public class Order
     {
-        public int Id { get; set; }
+        public int OrderId { get; set; }
 
         [Required]
         [Display(Name = "Ngày đặt hàng")]
@@ -65,6 +65,9 @@ namespace CT_Fas.Models
         Delivered,
         
         [Display(Name = "Đã hủy")]
-        Cancelled
+        Cancelled,
+
+        [Display(Name = "Đã trả hàng")]
+        Returned
     }
 }

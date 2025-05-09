@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CT_Fas.Models;
-using CT_Fas.Models.ViewModels;
+using CT_Fas.ViewModels;
 
 namespace CT_Fas.Areas.Admin.Controllers
 {
@@ -287,6 +287,11 @@ namespace CT_Fas.Areas.Admin.Controllers
 
                         product.ImageUrl = "/images/products/" + uniqueFileName;
                     }
+                    // Xóa các CartItem tham chiếu đến ProductSize trước
+                    var cartItems = await _context.CartItems
+                        .Where(ci => ci.ProductId == product.Id)
+                        .ToListAsync();
+                    _context.CartItems.RemoveRange(cartItems);
 
                     // Cập nhật sizes và số lượng
                     _context.ProductSizes.RemoveRange(product.ProductSizes);

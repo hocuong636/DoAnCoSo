@@ -1,47 +1,59 @@
-@model List<CT_Fas.Models.CartItem>
+@model CT_Fas.ViewModels.CartViewModel
 
-<ul class="header-cart-wrapitem w-full">
-    @if (Model != null && Model.Any())
-    {
-        @foreach (var item in Model)
-        {
-            <li class="header-cart-item flex-w flex-t m-b-12">
-                <div class="header-cart-item-img">
-                    <img src="@item.Product.ImageUrl" alt="@item.Product.Name">
+<div class="wrap-header-cart js-panel-cart">
+    <div class="s-full js-hide-cart"></div>
+
+    <div class="header-cart flex-col-l p-l-65 p-r-25">
+        <div class="header-cart-title flex-w flex-sb-m p-b-8">
+            <span class="mtext-103 cl2">
+                Giỏ hàng của bạn
+            </span>
+
+            <div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
+                <i class="zmdi zmdi-close"></i>
+            </div>
+        </div>
+
+        <div class="header-cart-content flex-w js-pscroll">
+            <div class="header-cart-wrapitem w-full">
+                @if (Model.Items.Any())
+                {
+                    foreach (var item in Model.Items)
+                    {
+                        <div class="header-cart-item flex-w flex-t m-b-12">
+                            <div class="header-cart-item-img">
+                                <img src="@item.ImageUrl" alt="@item.ProductName">
+                            </div>
+
+                            <div class="header-cart-item-txt p-t-8">
+                                <a href="/Product/Details/@item.ProductId" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
+                                    @item.ProductName
+                                </a>
+
+                                <span class="header-cart-item-info">
+                                    @item.Quantity x @item.Price.ToString("N0")₫ - Size @item.Size
+                                </span>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-center p-t-20">Giỏ hàng trống</p>
+                }
+            </div>
+
+            <div class="w-full">
+                <div class="header-cart-total w-full p-tb-40">
+                    Tổng cộng: @Model.Total.ToString("N0")₫
                 </div>
 
-                <div class="header-cart-item-txt p-t-8">
-                    <a href="/Product/Details/@item.Product.Id" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-                        @item.Product.Name
+                <div class="header-cart-buttons flex-w w-full">
+                    <a href="/Cart" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
+                        Xem giỏ hàng
                     </a>
-
-                    <span class="header-cart-item-info">
-                        @item.Quantity x @item.Product.Price.ToString("N0") VNĐ
-                    </span>
                 </div>
-            </li>
-        }
-        
-        <div class="w-full">
-            <div class="header-cart-total w-full p-tb-40">
-                Tổng: @Model.Sum(x => x.Quantity * x.Product.Price).ToString("N0") VNĐ
-            </div>
-
-            <div class="header-cart-buttons flex-w w-full">
-                <a href="@Url.Action("Index", "Cart")" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
-                    Xem giỏ hàng
-                </a>
-
-                <a href="@Url.Action("Checkout", "Order")" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-                    Thanh toán
-                </a>
             </div>
         </div>
-    }
-    else
-    {
-        <div class="w-full text-center p-t-50">
-            <p class="stext-102 cl6">Giỏ hàng trống</p>
-        </div>
-    }
-</ul>
+    </div>
+</div>

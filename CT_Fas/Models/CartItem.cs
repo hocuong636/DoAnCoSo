@@ -15,6 +15,10 @@ namespace CT_Fas.Models
         public Product Product { get; set; }
 
         [Required]
+        public int SizeId { get; set; }
+        public ProductSize Size { get; set; }
+
+        [Required]
         [Range(1, int.MaxValue, ErrorMessage = "Số lượng phải lớn hơn 0")]
         public int Quantity { get; set; }
 

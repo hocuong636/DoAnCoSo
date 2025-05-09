@@ -80,6 +80,13 @@ namespace CT_Fas.Models
                 .HasForeignKey(ci => ci.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            // Thiết lập quan hệ giữa CartItem và ProductSize
+            modelBuilder.Entity<CartItem>()
+                .HasOne(ci => ci.Size)
+                .WithMany()
+                .HasForeignKey(ci => ci.SizeId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             // Thiết lập quan hệ giữa Product và ProductReview
             modelBuilder.Entity<ProductReview>()
                 .HasOne(pr => pr.Product)

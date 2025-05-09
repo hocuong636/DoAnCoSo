@@ -22,6 +22,10 @@ namespace CT_Fas.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal UnitPrice { get; set; }
 
+        [Required]
+        [Display(Name = "Kích cỡ")]
+        public string Size { get; set; }
+
         [Display(Name = "Thành tiền")]
         [Column(TypeName = "decimal(18,2)")]
         public decimal TotalPrice { get; set; }

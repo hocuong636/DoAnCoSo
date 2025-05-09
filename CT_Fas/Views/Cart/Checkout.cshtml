@@ -1,0 +1,124 @@
+@model CT_Fas.ViewModels.CheckoutViewModel
+
+<form method="post" asp-controller="Cart" asp-action="PlaceOrder">
+<div class="container">
+    <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+        <a href="/" class="stext-109 cl8 hov-cl1 trans-04">
+            Trang chủ
+            <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+        </a>
+        <a href="/Cart" class="stext-109 cl8 hov-cl1 trans-04">
+            Giỏ hàng
+            <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+        </a>
+        <span class="stext-109 cl4">
+            Thanh toán
+        </span>
+    </div>
+
+    <div class="container p-t-50">
+        <div class="row justify-content-between">
+            <div class="col-md-6 m-b-50">
+                <div class="p-l-25 p-r-30 p-lr-0-lg">
+                    <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
+                        <h4 class="mtext-109 cl2 p-b-30">
+                            Thông tin giao hàng
+                        </h4>
+                            <div class="flex-w flex-t p-b-13">
+                                <div class="size-208">
+                                    <span class="stext-110 cl2">
+                                        Họ tên:
+                                    </span>
+                                </div>
+                                <div class="size-209">
+                                    <input class="form-control" type="text" name="CustomerName" value="@Model.CustomerName" required>
+                                </div>
+                            </div>
+
+                            <div class="flex-w flex-t p-t-15 p-b-13">
+                                <div class="size-208">
+                                    <span class="stext-110 cl2">
+                                        Email:
+                                    </span>
+                                </div>
+                                <div class="size-209">
+                                    <input class="form-control" type="email" name="Email" value="@Model.Email" required>
+                                </div>
+                            </div>
+
+                            <div class="flex-w flex-t p-t-15 p-b-13">
+                                <div class="size-208">
+                                    <span class="stext-110 cl2">
+                                        Số điện thoại:
+                                    </span>
+                                </div>
+                                <div class="size-209">
+                                    <input class="form-control" type="tel" name="Phone" value="@Model.Phone" required>
+                                </div>
+                            </div>
+
+                            <div class="flex-w flex-t p-t-15 p-b-13">
+                                <div class="size-208">
+                                    <span class="stext-110 cl2">
+                                        Địa chỉ:
+                                    </span>
+                                </div>
+                                <div class="size-209">
+                                    <textarea class="form-control" name="Address" rows="3" required>@Model.Address</textarea>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 m-b-50">
+                <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-0 m-r-0 p-lr-30-sm" style="min-width: 400px;">
+                    <h4 class="mtext-109 cl2 p-b-30">
+                        Đơn hàng của bạn
+                    </h4>
+
+                    @foreach (var item in Model.CartItems)
+                    {
+                        <div class="d-flex justify-content-between align-items-center p-b-20">
+                            <div class="flex-grow-1">
+                                <span class="stext-110 cl2">
+                                    @item.Product.Name (Size @item.Size.Size)
+                                </span>
+                            </div>
+                            <div class="px-3">
+                                <span class="stext-110 cl2">
+                                    x@(item.Quantity)
+                                </span>
+                            </div>
+                            <div>
+                                <span class="mtext-110 cl2">
+                                    @((item.Product.Price * item.Quantity).ToString("N0"))₫
+                                </span>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="flex-w flex-t p-t-30 p-b-33 mt-4 border-top">
+                        <div class="size-208">
+                            <span class="mtext-101 cl2">
+                                Tổng cộng:
+                            </span>
+                        </div>
+
+                        <div class="size-209 p-t-1">
+                            <span class="mtext-110 cl2">
+                                @Model.CartItems.Sum(i => i.Product.Price * i.Quantity).ToString("N0")₫
+                            </span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+                        Đặt hàng
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>

@@ -1,6 +1,24 @@
-﻿@{
+﻿@model List<CT_Fas.Models.Product>
+@{
     ViewData["Title"] = "Trang chủ";
 }
+
+<style>
+    .product-img-container {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
 
 <!-- Slider -->
 <section class="section-slide">
@@ -160,3 +178,49 @@
         </div>
     </div>
 </div>
+<!-- Product -->
+<section class="bg0 p-t-23 p-b-140">
+    <div class="container">
+        <div class="p-b-10">
+            <h3 class="ltext-103 cl5">
+                Sản phẩm nổi bật
+            </h3>
+        </div>
+
+        <div class="row isotope-grid">
+            @foreach (var product in Model.OrderBy(p => Guid.NewGuid()).Take(4))
+            {
+                <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item @(product.Category.Name.ToLower())">
+                    <div class="block2">
+                        <div class="block2-pic hov-img0">
+                            <div class="product-img-container">
+                                @if (!string.IsNullOrEmpty(product.ImageUrl))
+                                {
+                                    <img src="@product.ImageUrl" alt="@product.Name" class="product-img">
+                                }
+                                else if (product.ProductImages.Any())
+                                {
+                                    <img src="@product.ProductImages.First().ImageUrl" alt="@product.Name" class="product-img">
+                                }
+                            </div>
+                            <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+                                Xem nhanh
+                            </a>
+                        </div>
+
+                        <div class="block2-txt flex-w flex-t p-t-14">
+                            <div class="block2-txt-child1 flex-col-l">
+                                <a href="#" class="stext-104 cl4 hov-cl1 trans-04 p-b-6">
+                                    @product.Name
+                                </a>
+                                <span class="stext-105 cl3">
+                                    @product.Price.ToString("N0")đ
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

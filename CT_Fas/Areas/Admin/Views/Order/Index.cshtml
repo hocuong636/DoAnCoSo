@@ -1,0 +1,125 @@
+@model IEnumerable<CT_Fas.Models.Order>
+@using CT_Fas.Models
+
+@{
+    ViewData["Title"] = "Quản lý đơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    <h2 class="mt-4">Quản lý đơn hàng</h2>
+    
+    <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-table mr-1"></i>
+                Danh sách đơn hàng
+            </div>
+            <div>
+                <select id="orderFilter" class="form-control">
+                    <option value="default">Mặc định</option>
+                    <option value="date">Ngày đặt</option>
+                    <option value="status">Trạng thái</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="orderTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Mã đơn hàng</th>
+                            <th>Khách hàng</th>
+                            <th>Ngày đặt</th>
+                            <th>Tổng tiền</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.OrderId</td>
+                                <td>@item.CustomerName</td>
+                                <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>@item.TotalAmount.ToString("#,##0") ₫</td>
+                                <td>
+                                    <form asp-action="UpdateStatus" method="post" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="id" value="@item.OrderId" />
+                                        <select name="status" class="form-control status-select" 
+                                                onchange="this.form.submit()" 
+                                                style="background-color: @GetStatusColor(item.Status)">
+                                            @foreach (OrderStatus status in Enum.GetValues(typeof(OrderStatus)))
+                                            {
+                                                <option value="@((int)status)"
+                                                        selected="@(item.Status == status)"
+                                                        style="background-color: @GetStatusColor(status)">
+                                                    @status.GetDisplayName()
+                                                </option>
+                                            }
+                                        </select>
+                                    </form>
+                                </td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@item.OrderId" 
+                                       class="btn btn-info btn-sm">
+                                        <i class="fas fa-info-circle"></i> Chi tiết
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.OrderId" 
+                                       class="btn btn-danger btn-sm"
+                                       onclick="return confirm('Bạn có chắc chắn muốn xóa đơn hàng này?');">
+                                        <i class="fas fa-trash"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var table = $('#orderTable').DataTable({
+                "order": [[2, "desc"]]
+            });
+
+            $('#orderFilter').on('change', function() {
+                var value = $(this).val();
+                
+                switch(value) {
+                    case 'default':
+                        table.order([0, 'asc']).draw();
+                        break;
+                    case 'date':
+                        table.order([2, 'desc']).draw();
+                        break;
+                    case 'status':
+                        table.order([4, 'asc']).draw();
+                        break;
+                }
+            });
+        });
+    </script>
+}
+
+@functions {
+    public string GetStatusColor(OrderStatus status)
+    {
+        return status switch
+        {
+            OrderStatus.Pending => "#ffc107",    // Vàng
+            OrderStatus.Confirmed => "#17a2b8",  // Xanh dương
+            OrderStatus.Shipping => "#007bff",   // Xanh da trời
+            OrderStatus.Delivered => "#28a745",  // Xanh lá
+            OrderStatus.Cancelled => "#dc3545",  // Đỏ
+            OrderStatus.Returned => "#6c757d",   // Xám
+            _ => "#ffffff"                       // Trắng
+        };
+    }
+}

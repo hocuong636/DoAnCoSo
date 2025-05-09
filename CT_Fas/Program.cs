@@ -63,7 +63,6 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -71,12 +70,15 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseCookiePolicy();
+
 app.UseRouting();
 
 app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
@@ -89,7 +91,7 @@ app.MapControllerRoute(
 
 app.MapRazorPages();
 
-// Tạo scope để thêm role mặc định và tài khoản admin
+// Tạo scope để thêm role tài khoản admin
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -97,12 +99,6 @@ using (var scope = app.Services.CreateScope())
     {
         var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-
-        // Tạo role Admin nếu chưa tồn tại
-        if (!await roleManager.RoleExistsAsync("Admin"))
-        {
-            await roleManager.CreateAsync(new IdentityRole("Admin"));
-        }
 
         // Tạo tài khoản admin mặc định nếu chưa tồn tại
         var adminEmail = "admin@ctfashion.com";

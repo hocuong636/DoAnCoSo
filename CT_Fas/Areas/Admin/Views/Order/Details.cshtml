@@ -1,0 +1,153 @@
+@model CT_Fas.Models.Order
+@using CT_Fas.Models
+
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    
+    string GetSelectedAttribute(OrderStatus currentStatus, OrderStatus optionStatus)
+    {
+        return currentStatus == optionStatus ? "selected" : "";
+    }
+}
+
+<div class="container-fluid">
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Message"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    <h2 class="mt-4">Chi tiết đơn hàng #@Model.OrderId</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-user mr-1"></i>
+                    Thông tin khách hàng
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">Họ tên:</dt>
+                        <dd class="col-sm-8">@Model.CustomerName</dd>
+
+                        <dt class="col-sm-4">Số điện thoại:</dt>
+                        <dd class="col-sm-8">@Model.Phone</dd>
+
+                        <dt class="col-sm-4">Địa chỉ:</dt>
+                        <dd class="col-sm-8">@Model.Address</dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fas fa-info-circle mr-1"></i>
+                    Thông tin đơn hàng
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">Mã đơn hàng:</dt>
+                        <dd class="col-sm-8">#@Model.OrderId</dd>
+
+                        <dt class="col-sm-4">Ngày đặt:</dt>
+                        <dd class="col-sm-8">@Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</dd>
+
+                        <dt class="col-sm-4">Trạng thái:</dt>
+                        <dd class="col-sm-8">
+                            <form asp-action="UpdateStatus" method="post" class="d-inline">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@Model.OrderId" />
+                                <select asp-for="Status"
+                                        asp-items="@(Html.GetEnumSelectList<OrderStatus>())"
+                                        class="form-control status-select"
+                                        onchange="this.form.submit()"
+                                        style="background-color: @GetStatusColor(Model.Status)">
+                                </select>
+                            </form>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-shopping-cart mr-1"></i>
+            Chi tiết sản phẩm
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Kích thước</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.OrderDetails)
+                        {
+                            <tr>
+                                <td>
+                                    <a asp-area="Admin" asp-controller="Product" asp-action="Details" 
+                                       asp-route-id="@item.ProductId">
+                                        @item.Product.Name
+                                    </a>
+                                </td>
+                                <td>@item.Size</td>
+                                <td>@item.UnitPrice.ToString("#,##0") ₫</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.TotalPrice.ToString("#,##0") ₫</td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-right"><strong>Tổng cộng:</strong></td>
+                            <td><strong>@Model.TotalAmount.ToString("#,##0") ₫</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Quay lại
+        </a>
+        <a asp-action="Delete" asp-route-id="@Model.OrderId" 
+           class="btn btn-danger"
+           onclick="return confirm('Bạn có chắc chắn muốn xóa đơn hàng này?');">
+            <i class="fas fa-trash"></i> Xóa đơn hàng
+        </a>
+    </div>
+</div>
+
+@functions {
+    public string GetStatusColor(OrderStatus status)
+    {
+        return status switch
+        {
+            OrderStatus.Pending => "#ffc107",    // Vàng
+            OrderStatus.Confirmed => "#17a2b8",  // Xanh dương
+            OrderStatus.Shipping => "#007bff",   // Xanh da trời
+            OrderStatus.Delivered => "#28a745",  // Xanh lá
+            OrderStatus.Cancelled => "#dc3545",  // Đỏ
+            OrderStatus.Returned => "#6c757d",   // Xám
+            _ => "#ffffff"                       // Trắng
+        };
+    }
+}
