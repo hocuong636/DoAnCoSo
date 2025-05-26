@@ -25,6 +25,7 @@ namespace CT_Fas.Controllers
                 .Where(p => p.IsActive)
                 .ToListAsync();
 
+            ViewBag.Categories = await _context.Categories.ToListAsync();
             return View(products);
         }
 

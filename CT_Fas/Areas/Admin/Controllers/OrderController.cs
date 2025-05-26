@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 using CT_Fas.Models;
+using CT_Fas.Services;
 using Microsoft.AspNetCore.Identity;
 
 namespace CT_Fas.Areas.Admin.Controllers
@@ -15,11 +16,16 @@ namespace CT_Fas.Areas.Admin.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IEmailService _emailService;
 
-        public OrderController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        public OrderController(
+            ApplicationDbContext context,
+            UserManager<ApplicationUser> userManager,
+            IEmailService emailService)
         {
             _context = context;
             _userManager = userManager;
+            _emailService = emailService;
         }
 
         // GET: Admin/Order
@@ -67,6 +73,14 @@ namespace CT_Fas.Areas.Admin.Controllers
 
             order.Status = status;
             await _context.SaveChangesAsync();
+
+            // Gửi email thông báo cập nhật trạng thái
+            await _emailService.SendOrderStatusUpdateEmailAsync(
+                order.Email,
+                order.CustomerName,
+                order.OrderId.ToString(),
+                status.ToString()
+            );
             
             TempData["Message"] = "Cập nhật trạng thái đơn hàng thành công!";
             return RedirectToAction(nameof(Index));
@@ -97,8 +111,18 @@ namespace CT_Fas.Areas.Admin.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var order = await _context.Orders.FindAsync(id);
-            _context.Orders.Remove(order);
-            await _context.SaveChangesAsync();
+            if (order != null)
+            {
+                _context.Orders.Remove(order);
+                await _context.SaveChangesAsync();
+
+                // Gửi email thông báo hủy đơn hàng
+                await _emailService.SendOrderCancelledEmailAsync(
+                    order.Email,
+                    order.CustomerName,
+                    order.OrderId.ToString()
+                );
+            }
             return RedirectToAction(nameof(Index));
         }
     }

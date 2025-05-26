@@ -3,48 +3,52 @@
   "WorkspaceRootPath": "D:\\\u0110ACS\\CT_Fas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\views\\account\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\views\\account\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\areas\\admin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\areas\\admin\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|d:\\\u0111acs\\ct_fas\\ct_fas\\migrations\\20250506091903_lumla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A83C9528-9EE0-41F8-B599-06554DB8F396}|CT_Fas\\CT_Fas.csproj|solutionrelative:ct_fas\\migrations\\20250506091903_lumla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,8 +58,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CT_Fas\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CT_Fas\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAawOYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T05:25:26.035Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -71,135 +89,145 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "CT_Fas\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "CT_Fas\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Account\\Orders.cshtml",
+              "RelativeDocumentMoniker": "CT_Fas\\Views\\Account\\Orders.cshtml",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Account\\Orders.cshtml",
+              "RelativeToolTip": "CT_Fas\\Views\\Account\\Orders.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T21:06:37.01Z",
+              "WhenOpened": "2025-05-26T19:17:02.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CT_Fas\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CT_Fas\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T20:49:30.877Z"
+              "DocumentIndex": 3,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "CT_Fas\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Controllers\\CartController.cs",
+              "RelativeToolTip": "CT_Fas\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAuwA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T05:23:40.378Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "CT_Fas\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "CT_Fas\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T09:19:29.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250506091903_lumla.cs",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Migrations\\20250506091903_lumla.cs",
-              "RelativeDocumentMoniker": "CT_Fas\\Migrations\\20250506091903_lumla.cs",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Migrations\\20250506091903_lumla.cs",
-              "RelativeToolTip": "CT_Fas\\Migrations\\20250506091903_lumla.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "CT_Fas\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "CT_Fas\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowBAAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:19:03.519Z"
+              "WhenOpened": "2025-05-26T19:10:23.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CT_Fas\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "RelativeToolTip": "CT_Fas\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAADIAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "CT_Fas\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "CT_Fas\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAGMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T09:01:45.713Z"
+              "WhenOpened": "2025-05-26T17:21:50.777Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "CT_Fas\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "CT_Fas\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAD0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T05:44:58.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "CT_Fas\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "CT_Fas\\Areas\\Admin\\Views\\Order\\Details.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAArwE8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T06:00:08.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "CT_Fas\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "CT_Fas\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAIBJwHYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T08:09:27.823Z"
+              "WhenOpened": "2025-05-22T06:09:11.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "CT_Fas\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "CT_Fas\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBAAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T05:12:20.856Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "CT_Fas\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "CT_Fas\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "OrderViewModel.cs",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\ViewModels\\OrderViewModel.cs",
+              "RelativeDocumentMoniker": "CT_Fas\\ViewModels\\OrderViewModel.cs",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\ViewModels\\OrderViewModel.cs",
+              "RelativeToolTip": "CT_Fas\\ViewModels\\OrderViewModel.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T08:09:17.754Z"
+              "WhenOpened": "2025-05-22T05:16:49.376Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "CT_Fas\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "CT_Fas\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAABwAAABFAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CT_Fas\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CT_Fas\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAIBJwDAAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T08:08:54.983Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "CT_Fas\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "CT_Fas\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T07:49:51.95Z"
+              "WhenOpened": "2025-05-22T05:10:58.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "CT_Fas\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "CT_Fas\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHEAAABGAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "CT_Fas\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "CT_Fas\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwPYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T07:49:13.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "CT_Fas\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\\u0110ACS\\CT_Fas\\CT_Fas\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "CT_Fas\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAC4BAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T07:44:24.511Z"
+              "WhenOpened": "2025-05-22T05:06:48.766Z",
+              "EditorCaption": ""
             }
           ]
         }
