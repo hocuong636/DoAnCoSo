@@ -1,0 +1,107 @@
+@model List<CT_Fas.ViewModels.OrderViewModel>
+
+@{
+    ViewData["Title"] = "Đơn hàng của tôi";
+}
+
+<div class="container p-t-100 p-b-50">
+    <h2 class="m-b-30">Đơn hàng của tôi</h2>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    @if (!Model.Any())
+    {
+        <p>Bạn chưa có đơn hàng nào.</p>
+    }
+    else
+    {
+        foreach (var order in Model)
+        {
+            <div class="bor10 m-b-30">
+                <div class="p-30 bg2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="m-b-10">
+                                <strong>Ngày đặt:</strong> @order.OrderDate.ToString("dd/MM/yyyy HH:mm")
+                            </p>
+                            <p class="m-b-10">
+                                <strong>Địa chỉ giao hàng:</strong> @order.ShippingAddress
+                            </p>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <p class="m-b-10">
+                                <strong>Trạng thái:</strong>
+                                <span class="badge badge-primary">@order.Status</span>
+                            </p>
+                            <p class="m-b-10">
+                                <strong>
+                                    Tổng tiền:
+                                    <span class="text" style="color:red"> @order.TotalAmount.ToString("N0") ₫</span>
+                                </strong>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-30">
+                    <div class="wrap-table-shopping-cart">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr class="bg-light">
+                                    <th>Sản phẩm</th>
+                                    <th>Đơn giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Thành tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in order.Items)
+                                {
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="@item.ImageUrl" alt="@item.ProductName" style="width: 60px;">
+                                                <div class="ml-3">
+                                                    <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId" 
+                                                       class="text-dark">@item.ProductName</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>@item.UnitPrice.ToString("N0") ₫</td>
+                                        <td>@item.Quantity</td>
+                                        <td>@item.Total.ToString("N0") ₫</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style="margin: 15px; margin-top:0px;" class="text-right">
+                    @if (order.CanBeCancelled)
+                    {
+                        <form asp-action="CancelOrder" method="post" style="display: inline;">
+                            <input type="hidden" name="id" value="@order.OrderId" />
+                            <button type="submit" class="btn btn-danger btn-lg"
+                                    onclick="return confirm('Bạn có chắc chắn muốn hủy đơn hàng này?');">
+                                Hủy đơn hàng
+                            </button>
+                        </form>
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>

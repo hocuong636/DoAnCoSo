@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using CT_Fas.Models;
 using CT_Fas.ViewModels;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using CT_Fas.Services;
 
 namespace CT_Fas.Controllers
 {
@@ -12,15 +14,21 @@ namespace CT_Fas.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<AccountController> _logger;
+        private readonly ApplicationDbContext _context;
+        private readonly IEmailService _emailService;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            ILogger<AccountController> logger)
+            ILogger<AccountController> logger,
+            ApplicationDbContext context,
+            IEmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _context = context;
+            _emailService = emailService;
         }
 
         [HttpGet]
@@ -180,6 +188,78 @@ namespace CT_Fas.Controllers
             }
 
             return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Orders()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var orders = await _context.Orders
+                .Include(o => o.OrderDetails)
+                    .ThenInclude(od => od.Product)
+                .Where(o => o.UserId == user.Id)
+                .OrderByDescending(o => o.OrderDate)
+                .Select(o => new OrderViewModel
+                {
+                    OrderId = o.OrderId,
+                    OrderDate = o.OrderDate,
+                    TotalAmount = o.TotalAmount,
+                    Status = o.Status.ToString(),
+                    ShippingAddress = o.Address,
+                    Items = o.OrderDetails.Select(od => new OrderItemViewModel
+                    {
+                        ProductId = od.ProductId,
+                        ProductName = od.Product.Name,
+                        Quantity = od.Quantity,
+                        UnitPrice = od.UnitPrice,
+                        Total = od.TotalPrice,
+                        ImageUrl = od.Product.ImageUrl
+                    }).ToList()
+                })
+                .ToListAsync();
+
+            return View(orders);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CancelOrder(int id)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var order = await _context.Orders
+                .FirstOrDefaultAsync(o => o.OrderId == id && o.UserId == user.Id);
+
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            if (order.Status != OrderStatus.Pending)
+            {
+                TempData["ErrorMessage"] = "Chỉ có thể hủy đơn hàng đang chờ xác nhận";
+                return RedirectToAction(nameof(Orders));
+            }
+
+            order.Status = OrderStatus.Cancelled;
+            await _context.SaveChangesAsync();
+
+            await _emailService.SendOrderCancelledEmailAsync(
+                order.Email,
+                order.CustomerName,
+                order.OrderId.ToString()
+            );
+            TempData["SuccessMessage"] = "Đã hủy đơn hàng thành công";
+            return RedirectToAction(nameof(Orders));
         }
 
         private IActionResult RedirectToLocal(string returnUrl)

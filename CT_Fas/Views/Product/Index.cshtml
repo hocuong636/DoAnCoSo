@@ -5,6 +5,36 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <style>
+    /* Filter buttons */
+    .filter-tope-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -32px;
+    }
+
+    .filter-tope-group button {
+        margin-bottom: 10px;
+    }
+
+    /* Search panel */
+    .panel-search {
+        display: none;
+        width: 100%;
+    }
+
+    .panel-search.show {
+        display: block;
+    }
+
+    .js-show-search {
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+
+    .js-show-search i {
+        font-size: 20px;
+    }
+    
     .product-img-container {
         width: 100%;
         height: 300px;
@@ -34,84 +64,223 @@
         text-transform: uppercase;
         z-index: 1;
     }
+
+    /* Isotope animation */
+    .isotope-item {
+        z-index: 2;
+    }
+
+    .isotope-hidden.isotope-item {
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .isotope,
+    .isotope .isotope-item {
+        transition-duration: 0.8s;
+    }
+
+    .isotope {
+        transition-property: height, width;
+    }
+
+    .isotope .isotope-item {
+        transition-property: transform, opacity;
+    }
 </style>
 
 <!-- Product -->
 <div class="bg0 m-t-23 p-b-140">
     <div class="container">
         <div class="flex-w flex-sb-m p-b-52">
+            <!-- Danh mục -->
             <div class="flex-w flex-l-m filter-tope-group m-tb-10">
-                <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
+                <button onclick="filterProducts('all', event)"
+                        class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1 filter-button">
                     Tất cả sản phẩm
                 </button>
+                @foreach (var category in ViewBag.Categories)
+                {
+                    <button onclick="filterProducts('@category.Id', event)"
+                            class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 filter-button">
+                        @category.Name
+                    </button>
+                }
             </div>
 
             <div class="flex-w flex-c-m m-tb-10">
                 <div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
-                    <i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
-                    <i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
-                    Tìm kiếm
+                    <i class="zmdi zmdi-search"></i>
                 </div>
             </div>
-            
+
             <!-- Search product -->
             <div class="dis-none panel-search w-full p-t-10 p-b-15">
-                <form method="get" action="@Url.Action("Search", "Product")">
-                    <div class="bor8 dis-flex p-l-15">
-                        <button type="submit" class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
-                            <i class="zmdi zmdi-search"></i>
-                        </button>
-                        <input class="mtext-107 cl2 size-114 plh2 p-r-15" type="text" name="searchString" placeholder="Tìm kiếm">
-                    </div>
-                </form>
+                <div class="bor8 dis-flex p-l-15">
+                    <button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+                    <input id="searchInput"
+                           class="mtext-107 cl2 size-114 plh2 p-r-15"
+                           type="text"
+                           placeholder="Tìm kiếm sản phẩm..."
+                           onkeydown="handleSearch(event)">
+                </div>
             </div>
         </div>
 
+        <!-- Danh sách sản phẩm -->
         <div class="row isotope-grid">
             @foreach (var item in Model)
             {
-                <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
-                    <!-- Block2 -->
-                    <div class="block2">
-                        <div class="block2-pic hov-img0">
-                            <div class="product-img-container">
-                                @if (!string.IsNullOrEmpty(item.ImageUrl))
-                                {
-                                    <img src="@item.ImageUrl" alt="@item.Name" class="product-img">
-                                    @if(item.ProductSizes.Sum(s => s.StockQuantity) == 0)
-                                    {
-                                        <div class="out-of-stock">Hết hàng</div>
-                                    }
-                                }
-                                else if (item.ProductImages.Any())
-                                {
-                                    <img src="@item.ProductImages.First().ImageUrl" alt="@item.Name" class="product-img">
-                                }
-                                @if(item.ProductSizes.Sum(s => s.StockQuantity) == 0)
-                                {
-                                    <div class="out-of-stock ">Hết hàng</div>
-                                }
+                <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item product-item" data-category="@item.CategoryId">
+                            <!-- Block2 -->
+                            <div class="block2">
+                                <div class="block2-pic hov-img0">
+                                    <div class="product-img-container">
+                                        @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                        {
+                                            <img src="@item.ImageUrl" alt="@item.Name" class="product-img">
+                                            @if (item.ProductSizes.Sum(s => s.StockQuantity) == 0)
+                                            {
+                                                <div class="out-of-stock">Hết hàng</div>
+                                            }
+                                        }
+                                        else if (item.ProductImages.Any())
+                                        {
+                                            <img src="@item.ProductImages.First().ImageUrl" alt="@item.Name" class="product-img">
+                                        }
+                                        @if (item.ProductSizes.Sum(s => s.StockQuantity) == 0)
+                                        {
+                                            <div class="out-of-stock ">Hết hàng</div>
+                                        }
+                                    </div>
+
+                                    <a href="@Url.Action("Details", "Product", new { id = item.Id })" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+                                        Xem chi tiết
+                                    </a>
+                                </div>
+
+                                <div class="block2-txt flex-w flex-t p-t-14">
+                                    <div class="block2-txt-child1 flex-col-l">
+                                        <a href="@Url.Action("Details", "Product", new { id = item.Id})" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                            @item.Name
+                                        </a>
+
+                                        <span class="stext-105 cl3">
+                                            @item.Price.ToString("N0") VNĐ
+                                        </span>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <a href="@Url.Action("Details", "Product", new { id = item.Id })" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-                                Xem chi tiết
-                            </a>
                         </div>
-
-                        <div class="block2-txt flex-w flex-t p-t-14">
-                            <div class="block2-txt-child1 flex-col-l">
-                                <a href="@Url.Action("Details", "Product", new { id = item.Id})" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                    @item.Name
-                                </a>
-
-                                <span class="stext-105 cl3">
-                                    @item.Price.ToString("N0") VNĐ
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    }
                 </div>
-            }
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+// Biến lưu trữ category đang được chọn
+let currentCategory = 'all';
+
+// Xử lý hiện/ẩn thanh tìm kiếm
+$('.js-show-search').on('click', function() {
+    $('.panel-search').slideToggle(400);
+});
+
+function handleSearch(event) {
+    if (event.key === ' ' || event.code === 'Space') {
+        event.preventDefault(); // Ngăn space thêm khoảng trắng
+        const searchText = event.target.value;
+        searchProducts(searchText);
+    }
+}
+
+function searchProducts(searchText) {
+    const $grid = $('.isotope-grid');
+    const products = document.querySelectorAll('.product-item');
+    const searchLower = searchText.toLowerCase();
+    
+    // Reset lại tất cả sản phẩm
+    products.forEach(product => {
+        $(product).show();
+    });
+
+    if (searchLower !== '') {
+        products.forEach(product => {
+            const productName = product.querySelector('.js-name-b2').textContent.toLowerCase();
+            if (!productName.includes(searchLower)) {
+                $(product).hide();
+            }
+        });
+    }
+
+    // Sắp xếp lại grid sau khi tìm kiếm
+    $grid.isotope('layout');
+}
+
+function filterByCategory(categoryId) {
+    const $grid = $('.isotope-grid');
+    const products = document.querySelectorAll('.product-item');
+    
+    // Reset lại tất cả sản phẩm
+    products.forEach(product => {
+        $(product).show();
+    });
+
+    if (categoryId !== 'all') {
+        products.forEach(product => {
+            const productCategory = product.getAttribute('data-category');
+            if (productCategory !== categoryId) {
+                $(product).hide();
+            }
+        });
+    }
+
+    // Sắp xếp lại grid sau khi lọc danh mục
+    $grid.isotope('layout');
+}
+
+// Khởi tạo Isotope khi trang load xong
+$(window).on('load', function() {
+    $('.isotope-grid').isotope({
+        itemSelector: '.isotope-item',
+        layoutMode: 'fitRows',
+        percentPosition: true,
+        transitionDuration: '0.8s',
+        stagger: 50,
+        hiddenStyle: {
+            opacity: 0,
+            transform: 'scale(0.5)'
+        },
+        visibleStyle: {
+            opacity: 1,
+            transform: 'scale(1)'
+        }
+    });
+});
+
+function filterProducts(categoryId, event) {
+    // Xử lý active button
+    const buttons = document.querySelectorAll('.filter-button');
+    buttons.forEach(button => button.classList.remove('how-active1'));
+    event.target.classList.add('how-active1');
+
+    // Reset ô tìm kiếm
+    document.getElementById('searchInput').value = '';
+    
+    // Lọc theo danh mục
+    filterByCategory(categoryId);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const allProductsButton = document.querySelector('.filter-button');
+    if (allProductsButton) {
+        allProductsButton.classList.add('how-active1');
+    }
+});
+</script>

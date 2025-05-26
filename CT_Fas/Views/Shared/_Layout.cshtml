@@ -46,7 +46,7 @@
                                 <a href="@Url.Action("Features", "Home")">Đặc sắc</a>
                             </li>
                             <li class="@(ViewContext.RouteData.Values["controller"].ToString() == "Blog" ? "active-menu" : "")">
-                                <a href="@Url.Action("Index", "Blog")">Blog</a>
+                                <a href="@Url.Action("Blog", "Home")">Blog</a>
                             </li>
                             <li class="@(ViewContext.RouteData.Values["action"].ToString() == "About" ? "active-menu" : "")">
                                 <a href="@Url.Action("About", "Home")">Về chúng tôi</a>

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using CT_Fas.Models;
 using CT_Fas.ViewModels;
+using CT_Fas.Services;
 
 namespace CT_Fas.Controllers
 {
@@ -10,11 +11,16 @@ namespace CT_Fas.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IEmailService _emailService;
 
-        public CartController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        public CartController(
+            ApplicationDbContext context,
+            UserManager<ApplicationUser> userManager,
+            IEmailService emailService)
         {
             _context = context;
             _userManager = userManager;
+            _emailService = emailService;
         }
 
         public async Task<IActionResult> Index()
@@ -146,8 +152,14 @@ namespace CT_Fas.Controllers
                     await _context.SaveChangesAsync();
 
                     await transaction.CommitAsync();
+                    // Gửi email xác nhận đơn hàng
+                    await _emailService.SendOrderConfirmationEmailAsync(
+                        order.Email,
+                        order.CustomerName,
+                        order.OrderId.ToString()
+                    );
                     TempData["Success"] = "Đặt hàng thành công!";
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Orders", "Account");
                 }
                 catch
                 {
