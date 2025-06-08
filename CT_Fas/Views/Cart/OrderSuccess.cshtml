@@ -1,0 +1,117 @@
+@model CT_Fas.ViewModels.OrderSuccessViewModel
+@{
+    ViewData["Title"] = "Đặt hàng thành công";
+}
+
+<div class="container p-t-100 p-b-50">
+    <div class="text-center">
+        <i class="zmdi zmdi-check-circle text-success" style="font-size: 80px;"></i>
+        <h2 class="m-t-30">Đặt hàng thành công!</h2>
+        <p class="m-t-15">Cảm ơn bạn đã đặt hàng. Chúng tôi sẽ xử lý đơn hàng của bạn trong thời gian sớm nhất.</p>
+        
+        <div class="bor10 m-t-50 p-t-30 p-b-40 m-lr-40">
+            <h4 class="mtext-109 cl2 p-b-30">Thông tin đơn hàng</h4>
+            
+            <div class="flex-w flex-t p-b-13">
+                <div class="size-208">
+                    <span class="stext-110 cl2">Họ tên:</span>
+                </div>
+                <div class="size-209">
+                    <span>@Model.CustomerName</span>
+                </div>
+            </div>
+
+            <div class="flex-w flex-t p-b-13">
+                <div class="size-208">
+                    <span class="stext-110 cl2">Email:</span>
+                </div>
+                <div class="size-209">
+                    <span>@Model.Email</span>
+                </div>
+            </div>
+
+            <div class="flex-w flex-t p-b-13">
+                <div class="size-208">
+                    <span class="stext-110 cl2">Số điện thoại:</span>
+                </div>
+                <div class="size-209">
+                    <span>@Model.Phone</span>
+                </div>
+            </div>
+
+            <div class="flex-w flex-t p-b-13">
+                <div class="size-208">
+                    <span class="stext-110 cl2">Địa chỉ:</span>
+                </div>
+                <div class="size-209">
+                    <span>@Model.Address</span>
+                </div>
+            </div>
+
+            <div class="flex-w flex-t p-b-13">
+                <div class="size-208">
+                    <span class="stext-110 cl2">Ngày đặt:</span>
+                </div>
+                <div class="size-209">
+                    <span>@Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</span>
+                </div>
+            </div>
+
+            <div class="m-t-20">
+                <h5 class="mtext-101 cl2 p-b-20">Chi tiết đơn hàng</h5>
+                <div class="wrap-table-shopping-cart">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="table_head">
+                                <th>Sản phẩm</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.OrderDetails)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="@item.Product.ImageUrl" alt="@item.Product.Name" style="width: 60px;">
+                                            <div class="ml-3">
+                                                <span>@item.Product.Name</span>
+                                                <br/>
+                                                <small>Size: @item.Size</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>@item.UnitPrice.ToString("N0")₫</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.TotalPrice.ToString("N0")₫</td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-right">
+                                    <strong>Tổng cộng:</strong>
+                                </td>
+                                <td>
+                                    <strong>@Model.TotalAmount.ToString("N0")₫</strong>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <p class="m-t-30 m-b-30">Bạn có thể theo dõi trạng thái đơn hàng trong mục "Đơn hàng của tôi".</p>
+        <div class="flex-w flex-m justify-content-center">
+            <a href="/" class="btn btn-outline-secondary m-r-10">
+                Tiếp tục mua sắm
+            </a>
+            <a href="/Account/Orders" class="btn btn-primary">
+                Xem đơn hàng
+            </a>
+        </div>
+    </div>
+</div>
