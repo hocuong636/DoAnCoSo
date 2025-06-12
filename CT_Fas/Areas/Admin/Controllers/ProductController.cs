@@ -357,6 +357,14 @@ namespace CT_Fas.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            // Kiểm tra xem sản phẩm có trong OrderDetails không
+            var hasOrders = await _context.OrderDetails.AnyAsync(od => od.ProductId == id);
+            if (hasOrders)
+            {
+                TempData["Error"] = "Không thể xóa sản phẩm này vì đã có trong đơn hàng.";
+                return RedirectToAction(nameof(Index));
+            }
+
             var product = await _context.Products
                 .Include(p => p.ProductImages)
                 .Include(p => p.ProductSizes)
@@ -417,6 +425,21 @@ namespace CT_Fas.Areas.Admin.Controllers
         {
             try
             {
+                // Kiểm tra xem có sản phẩm nào trong OrderDetails không
+                var productsWithOrders = await _context.OrderDetails
+                    .Where(od => ids.Contains(od.ProductId))
+                    .Select(od => od.ProductId)
+                    .Distinct()
+                    .ToListAsync();
+
+                if (productsWithOrders.Any())
+                {
+                    return Json(new {
+                        success = false,
+                        message = "Không thể xóa một số sản phẩm vì đã có trong đơn hàng."
+                    });
+                }
+
                 var products = await _context.Products
                     .Include(p => p.ProductImages)
                     .Include(p => p.ProductSizes)

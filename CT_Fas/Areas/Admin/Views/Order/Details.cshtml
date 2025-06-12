@@ -64,13 +64,20 @@
                         <dd class="col-sm-8">
                             <form asp-action="UpdateStatus" method="post" class="d-inline">
                                 @Html.AntiForgeryToken()
-                                <input type="hidden" name="id" value="@Model.OrderId" />
-                                <select asp-for="Status"
-                                        asp-items="@(Html.GetEnumSelectList<OrderStatus>())"
-                                        class="form-control status-select"
-                                        onchange="this.form.submit()"
-                                        style="background-color: @GetStatusColor(Model.Status)">
-                                </select>
+                                        <input type="hidden" name="id" value="@Model.OrderId" />
+                                        <select name="status" class="form-control status-select" 
+                                                onchange="this.form.submit()"
+                                        style="font-weight: bold; color: @GetStatusColor(Model.Status)"
+                                                @(Model.Status == OrderStatus.Cancelled || Model.Status == OrderStatus.Returned ? "disabled" : "")>
+                                            @foreach (OrderStatus status in Enum.GetValues(typeof(OrderStatus)))
+                                            {
+                                                <option value="@((int)status)"
+                                                        selected="@(Model.Status == status)"
+                                                style="font-weight: bold; color: @GetStatusColor(status)">
+                                                    @status.GetDisplayName()
+                                                </option>
+                                            }
+                                        </select>
                             </form>
                         </dd>
                     </dl>

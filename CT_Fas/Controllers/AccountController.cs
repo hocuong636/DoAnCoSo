@@ -262,6 +262,69 @@ namespace CT_Fas.Controllers
             return RedirectToAction(nameof(Orders));
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteAccount()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            IdentityResult result = null;
+            try
+            {
+                // Xóa giỏ hàng của user
+                var userCarts = _context.Carts.Where(c => c.UserId == user.Id);
+                _context.Carts.RemoveRange(userCarts);
+                await _context.SaveChangesAsync();
+
+                // Xóa các đơn hàng của user
+                var userOrders = _context.Orders.Where(o => o.UserId == user.Id);
+                _context.Orders.RemoveRange(userOrders);
+                await _context.SaveChangesAsync();
+
+                // Đăng xuất người dùng
+                await _signInManager.SignOutAsync();
+
+                // Xóa tài khoản
+                result = await _userManager.DeleteAsync(user);
+
+                if (result.Succeeded)
+                {
+                    TempData["SuccessMessage"] = "Tài khoản của bạn đã được xóa thành công";
+                    return RedirectToAction("Index", "Home");
+                }
+
+                // Nếu có lỗi khi xóa tài khoản
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, "Có lỗi xảy ra khi xóa tài khoản. Vui lòng thử lại sau.");
+                _logger.LogError($"Error deleting account for user {user.Email}: {ex.Message}");
+            }
+
+            return RedirectToAction(nameof(Profile));
+            if (result.Succeeded)
+            {
+                TempData["SuccessMessage"] = "Tài khoản của bạn đã được xóa thành công";
+                return RedirectToAction("Index", "Home");
+            }
+
+            // Nếu có lỗi
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            return RedirectToAction(nameof(Profile));
+        }
+
         private IActionResult RedirectToLocal(string returnUrl)
         {
             if (Url.IsLocalUrl(returnUrl))

@@ -53,8 +53,8 @@
                         <option value="in" selected="@(ViewBag.StockStatus == "in")">Còn hàng</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary mx-2">Lọc</button>
-                <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-secondary">Đặt lại</a>
+                <button type="submit" class="btn btn-primary mx-2" style="margin-top: 10px">Lọc</button>
+                <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="margin-top: 10px">Đặt lại</a>
             </form>
         </div>
         <div class="card-body">
@@ -70,9 +70,6 @@
                 <table class="table table-bordered" id="productTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>
-                                <input type="checkbox" id="selectAll" />
-                            </th>
                             <th>Ảnh</th>
                             <th>@Html.DisplayNameFor(model => model.Name)</th>
                             <th>@Html.DisplayNameFor(model => model.Price)</th>
@@ -85,9 +82,6 @@
                         @foreach (var item in Model)
                         {
                             <tr data-id="@item.Id">
-                                <td>
-                                    <input type="checkbox" class="product-checkbox" value="@item.Id" />
-                                </td>
                                 <td style="width: 100px;">
                                     @if (!string.IsNullOrEmpty(item.ImageUrl))
                                     {

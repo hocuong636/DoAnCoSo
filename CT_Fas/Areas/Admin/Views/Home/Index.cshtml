@@ -107,12 +107,12 @@
                                         <input type="hidden" name="id" value="@order.OrderId" />
                                         <select name="status" class="form-control status-select"
                                                 onchange="this.form.submit()"
-                                                style="background-color: @GetStatusColor(order.Status)">
+                                                style="font-weight: bold;color: @GetStatusColor(order.Status)">
                                             @foreach (OrderStatus status in Enum.GetValues(typeof(OrderStatus)))
                                             {
                                                 <option value="@((int)status)"
                                                         selected="@(order.Status == status)"
-                                                        style="background-color: @GetStatusColor(status)">
+                                                        style="font-weight: bold;color: @GetStatusColor(status)">
                                                     @status.GetDisplayName()
                                                 </option>
                                             }

@@ -58,17 +58,122 @@ namespace CT_Fas.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddToCart(int productId, int quantity)
+        public async Task<IActionResult> AddToCart(int productId, int quantity, int sizeId)
         {
-            // TODO: Sẽ cập nhật để thêm sản phẩm vào cart
-            return Json(new { success = true });
+            try
+            {
+                var user = await _userManager.GetUserAsync(User);
+                if (user == null)
+                {
+                    return Json(new { success = false, message = "Bạn cần đăng nhập để thêm sản phẩm vào giỏ hàng" });
+                }
+
+                // Kiểm tra sản phẩm tồn tại
+                var product = await _context.Products.FindAsync(productId);
+                if (product == null)
+                {
+                    return Json(new { success = false, message = "Sản phẩm không tồn tại" });
+                }
+
+                // Kiểm tra size tồn tại
+                var size = await _context.ProductSizes.FindAsync(sizeId);
+                if (size == null)
+                {
+                    return Json(new { success = false, message = "Size không hợp lệ" });
+                }
+
+                // Tìm giỏ hàng chưa đặt hàng của user
+
+                var cart = await _context.Carts
+                    .FirstOrDefaultAsync(c => c.UserId == user.Id && !c.IsOrdered);
+                // Nếu không có giỏ hàng hoặc giỏ hàng đã đặt -> tạo giỏ hàng mới
+                if (cart == null)
+                {
+                    cart = new Cart
+                    {
+                        UserId = user.Id,
+                        IsOrdered = false,
+                        CreatedAt = DateTime.Now
+                    };
+                    _context.Carts.Add(cart);
+                    await _context.SaveChangesAsync();
+                }
+
+                // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+                var cartItem = await _context.CartItems
+                    .FirstOrDefaultAsync(ci => ci.CartId == cart.Id &&
+                                             ci.ProductId == productId &&
+                                             ci.SizeId == sizeId);
+
+                if (cartItem != null)
+                {
+                    // Cập nhật số lượng nếu sản phẩm đã có trong giỏ hàng
+                    cartItem.Quantity += quantity;
+                }
+                else
+                {
+                    // Thêm sản phẩm mới vào giỏ hàng
+                    cartItem = new CartItem
+                    {
+                        CartId = cart.Id,
+                        ProductId = productId,
+                        SizeId = sizeId,
+                        Quantity = quantity
+                    };
+                    _context.CartItems.Add(cartItem);
+                }
+                await _context.SaveChangesAsync();
+                
+                var currentCartItemCount = await _context.CartItems
+                    .Where(ci => ci.Cart.UserId == user.Id && !ci.Cart.IsOrdered)
+                    .SumAsync(ci => ci.Quantity);
+
+                return Json(new {
+                    success = true,
+                    message = "Đã thêm sản phẩm vào giỏ hàng",
+                    cartItemCount = currentCartItemCount
+                });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Có lỗi xảy ra khi thêm sản phẩm vào giỏ hàng" });
+            }
         }
 
         [HttpPost]
-        public IActionResult UpdateQuantity(int cartItemId, int quantity)
+        public async Task<IActionResult> UpdateQuantity(int id, int quantity)
         {
-            // TODO: Sẽ cập nhật số lượng sản phẩm trong cart
-            return Json(new { success = true });
+            try
+            {
+                var user = await _userManager.GetUserAsync(User);
+                if (user == null)
+                {
+                    return Json(new { success = false, message = "Bạn cần đăng nhập để cập nhật giỏ hàng" });
+                }
+
+                var cartItem = await _context.CartItems
+                    .Include(c => c.Cart)
+                    .FirstOrDefaultAsync(c => c.Id == id && c.Cart.UserId == user.Id && !c.Cart.IsOrdered);
+
+                if (cartItem == null)
+                {
+                    return Json(new { success = false, message = "Không tìm thấy sản phẩm trong giỏ hàng" });
+                }
+
+                if (quantity < 1)
+                {
+                    return Json(new { success = false, message = "Số lượng không hợp lệ" });
+                }
+
+                cartItem.Quantity = quantity;
+                await _context.SaveChangesAsync();
+
+                return Json(new { success = true });
+            }
+            catch (Exception)
+            {
+                return Json(new { success = false, message = "Có lỗi xảy ra khi cập nhật số lượng" });
+            }
         }
 
         [HttpPost]
@@ -84,8 +189,8 @@ namespace CT_Fas.Controllers
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                TempData["Error"] = "Bạn cần đăng nhập để đặt hàng";
-                return RedirectToAction(nameof(Index));
+                TempData["ErrorMessage"] = "Bạn cần đăng nhập để đặt hàng";
+                return RedirectToAction(nameof(Checkout));
             }
 
             var cartItems = await _context.CartItems
@@ -97,8 +202,8 @@ namespace CT_Fas.Controllers
 
             if (!cartItems.Any())
             {
-                TempData["Error"] = "Giỏ hàng của bạn đang trống";
-                return RedirectToAction(nameof(Index));
+                TempData["ErrorMessage"] = "Giỏ hàng của bạn đang trống";
+                return RedirectToAction(nameof(Checkout));
             }
 
             using (var transaction = await _context.Database.BeginTransactionAsync())
@@ -130,7 +235,7 @@ namespace CT_Fas.Controllers
                             Size = item.Size.Size,
                             TotalPrice = item.Product.Price * item.Quantity
                         };
-                        
+                        item.Size.StockQuantity -= item.Quantity;
                         _context.OrderDetails.Add(orderDetail);
                     }
 
@@ -145,8 +250,6 @@ namespace CT_Fas.Controllers
                             
                             // Xóa tất cả CartItems
                             _context.CartItems.RemoveRange(cartItems);
-                            
-
                         }
                     }
                     await _context.SaveChangesAsync();
@@ -158,14 +261,13 @@ namespace CT_Fas.Controllers
                         order.CustomerName,
                         order.OrderId.ToString()
                     );
-                    TempData["Success"] = "Đặt hàng thành công!";
-                    return RedirectToAction("Orders", "Account");
+                    return RedirectToAction(nameof(OrderSuccess), new { orderId = order.OrderId });
                 }
-                catch
+                catch (Exception ex)
                 {
                     await transaction.RollbackAsync();
-                    TempData["Error"] = "Có lỗi xảy ra khi đặt hàng. Vui lòng thử lại sau.";
-                    return RedirectToAction(nameof(Index));
+                    TempData["ErrorMessage"] = $"Có lỗi xảy ra khi đặt hàng: {ex.Message}";
+                    return RedirectToAction(nameof(Checkout));
                 }
             }
         }
@@ -175,7 +277,7 @@ namespace CT_Fas.Controllers
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                TempData["Error"] = "Bạn cần đăng nhập để đặt hàng";
+                TempData["ErrorMessage"] = "Bạn cần đăng nhập để đặt hàng";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -188,7 +290,7 @@ namespace CT_Fas.Controllers
 
             if (!cartItems.Any())
             {
-                TempData["Error"] = "Giỏ hàng của bạn đang trống";
+                TempData["ErrorMessage"] = "Giỏ hàng của bạn đang trống";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -199,6 +301,32 @@ namespace CT_Fas.Controllers
                 Email = user.Email,
                 Phone = user.PhoneNumber,
                 Address = user.Address
+            };
+
+            return View(viewModel);
+        }
+
+        public async Task<IActionResult> OrderSuccess(int orderId)
+        {
+            var order = await _context.Orders
+                .Include(o => o.OrderDetails)
+                .ThenInclude(od => od.Product)
+                .FirstOrDefaultAsync(o => o.OrderId == orderId);
+
+            if (order == null)
+            {
+                return NotFound();
+            }
+            var viewModel = new OrderSuccessViewModel
+            {
+                OrderId = order.OrderId,
+                CustomerName = order.CustomerName,
+                Email = order.Email,
+                Phone = order.Phone,
+                Address = order.Address,
+                TotalAmount = order.TotalAmount,
+                OrderDate = order.OrderDate,
+                OrderDetails = order.OrderDetails.ToList()
             };
 
             return View(viewModel);

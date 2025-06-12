@@ -42,11 +42,12 @@ namespace CT_Fas.Controllers
                 await _context.SaveChangesAsync();
 
                 // Gửi email xác nhận đơn hàng
-                await _emailService.SendOrderConfirmationEmailAsync(
+                _emailService.SendOrderConfirmationEmailAsync(
                     order.Email,
                     order.CustomerName,
                     order.OrderId.ToString()
                 );
+
 
                 TempData["SuccessMessage"] = "Đặt hàng thành công!";
                 return RedirectToAction("OrderConfirmation", new { id = order.OrderId });
@@ -80,7 +81,7 @@ namespace CT_Fas.Controllers
             await _context.SaveChangesAsync();
 
             // Gửi email thông báo hủy đơn hàng
-            await _emailService.SendOrderCancelledEmailAsync(
+            _emailService.SendOrderCancelledEmailAsync(
                 order.Email,
                 order.CustomerName,
                 order.OrderId.ToString()

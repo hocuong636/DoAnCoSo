@@ -122,7 +122,7 @@ namespace CT_Fas.Controllers
 
                 if (productSize.StockQuantity < quantity)
                 {
-                    return Json(new { success = false, message = "Số lượng sản phẩm trong kho không đủ" });
+                    return Json(new { success = false, message = "Số lượng sản phẩm trong kho chỉ còn " + productSize.StockQuantity +" sản phẩm"});
                 }
 
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);

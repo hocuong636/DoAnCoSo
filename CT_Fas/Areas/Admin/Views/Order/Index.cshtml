@@ -15,20 +15,12 @@
                 <i class="fas fa-table mr-1"></i>
                 Danh sách đơn hàng
             </div>
-            <div>
-                <select id="orderFilter" class="form-control">
-                    <option value="default">Mặc định</option>
-                    <option value="date">Ngày đặt</option>
-                    <option value="status">Trạng thái</option>
-                </select>
-            </div>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" id="orderTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Mã đơn hàng</th>
                             <th>Khách hàng</th>
                             <th>Ngày đặt</th>
                             <th>Tổng tiền</th>
@@ -40,7 +32,6 @@
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td>@item.OrderId</td>
                                 <td>@item.CustomerName</td>
                                 <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
                                 <td>@item.TotalAmount.ToString("#,##0") ₫</td>
@@ -49,13 +40,14 @@
                                         @Html.AntiForgeryToken()
                                         <input type="hidden" name="id" value="@item.OrderId" />
                                         <select name="status" class="form-control status-select" 
-                                                onchange="this.form.submit()" 
-                                                style="background-color: @GetStatusColor(item.Status)">
+                                                onchange="this.form.submit()"
+                                                style="font-weight: bold; color: @GetStatusColor(item.Status)"
+                                                @(item.Status == OrderStatus.Cancelled || item.Status == OrderStatus.Returned ? "disabled" : "")>
                                             @foreach (OrderStatus status in Enum.GetValues(typeof(OrderStatus)))
                                             {
                                                 <option value="@((int)status)"
                                                         selected="@(item.Status == status)"
-                                                        style="background-color: @GetStatusColor(status)">
+                                                        style="font-weight: bold; color: @GetStatusColor(status)">
                                                     @status.GetDisplayName()
                                                 </option>
                                             }
@@ -81,32 +73,6 @@
         </div>
     </div>
 </div>
-
-@section Scripts {
-    <script>
-        $(document).ready(function () {
-            var table = $('#orderTable').DataTable({
-                "order": [[2, "desc"]]
-            });
-
-            $('#orderFilter').on('change', function() {
-                var value = $(this).val();
-                
-                switch(value) {
-                    case 'default':
-                        table.order([0, 'asc']).draw();
-                        break;
-                    case 'date':
-                        table.order([2, 'desc']).draw();
-                        break;
-                    case 'status':
-                        table.order([4, 'asc']).draw();
-                        break;
-                }
-            });
-        });
-    </script>
-}
 
 @functions {
     public string GetStatusColor(OrderStatus status)

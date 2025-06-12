@@ -101,3 +101,72 @@
         </div>
     </div>
 </div>
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Xử lý sự kiện click nút giảm số lượng
+            $('.btn-num-product-down').on('click', function() {
+                var input = $(this).closest('.wrap-num-product').find('.num-product');
+                var newVal = parseInt(input.val()) - 1;
+                if (newVal >= 1) {
+                    input.val(newVal);
+                    updateQuantity($(this).closest('.table_row'));
+                }
+            });
+
+            // Xử lý sự kiện click nút tăng số lượng
+            $('.btn-num-product-up').on('click', function() {
+                var input = $(this).closest('.wrap-num-product').find('.num-product');
+                var newVal = parseInt(input.val()) + 1;
+                input.val(newVal);
+                updateQuantity($(this).closest('.table_row'));
+            });
+
+            // Xử lý sự kiện thay đổi input số lượng
+            $('.num-product').on('change', function() {
+                var newVal = parseInt($(this).val());
+                if (newVal < 1) {
+                    $(this).val(1);
+                    newVal = 1;
+                }
+                updateQuantity($(this).closest('.table_row'));
+            });
+
+            // Hàm cập nhật số lượng
+            function updateQuantity(row) {
+                var id = row.data('id');
+                var quantity = parseInt(row.find('.num-product').val());
+                // Lấy giá từ cột giá và chuyển về số
+                var priceText = row.find('.column-3').text();
+                var price = parseInt(priceText.replace(/\D/g, ''));
+
+                $.ajax({
+                    url: '/Cart/UpdateQuantity',
+                    type: 'POST',
+                    data: { id: id, quantity: quantity },
+                    success: function(response) {
+                        if (response.success) {
+                            // Cập nhật tổng tiền của sản phẩm
+                            var total = price * quantity;
+                            row.find('.column-5').text(total.toLocaleString('vi-VN') + '₫');
+
+                            // Cập nhật tổng tiền giỏ hàng
+                            var cartTotal = 0;
+                            $('.table_row').each(function() {
+                                var rowTotalText = $(this).find('.column-5').text();
+                                var rowTotal = parseInt(rowTotalText.replace(/\D/g, ''));
+                                cartTotal += rowTotal;
+                            });
+                            $('.flex-c-m.stext-101.cl2.size-119').text('Tổng cộng: ' + cartTotal.toLocaleString('vi-VN') + '₫');
+                        } else {
+                            alert('Có lỗi xảy ra khi cập nhật số lượng');
+                        }
+                    },
+                    error: function() {
+                        alert('Có lỗi xảy ra khi cập nhật số lượng');
+                    }
+                });
+            }
+        });
+    </script>
+}

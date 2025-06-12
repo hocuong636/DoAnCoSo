@@ -8274,11 +8274,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\ĐACS\\CT_Fas\\CT_Fas\\CT_Fas.csproj",
+      "projectUniqueName": "D:\\ĐACS\\CT_Fas\\CT_Fas\\CT_Fas.csproj",
       "projectName": "CT_Fas",
-      "projectPath": "d:\\ĐACS\\CT_Fas\\CT_Fas\\CT_Fas.csproj",
+      "projectPath": "D:\\ĐACS\\CT_Fas\\CT_Fas\\CT_Fas.csproj",
       "packagesPath": "C:\\Users\\abcmn\\.nuget\\packages\\",
-      "outputPath": "d:\\ĐACS\\CT_Fas\\CT_Fas\\obj\\",
+      "outputPath": "D:\\ĐACS\\CT_Fas\\CT_Fas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

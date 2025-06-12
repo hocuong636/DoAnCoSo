@@ -75,7 +75,7 @@ namespace CT_Fas.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
 
             // Gửi email thông báo cập nhật trạng thái
-            await _emailService.SendOrderStatusUpdateEmailAsync(
+            _emailService.SendOrderStatusUpdateEmailAsync(
                 order.Email,
                 order.CustomerName,
                 order.OrderId.ToString(),
@@ -117,7 +117,7 @@ namespace CT_Fas.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
 
                 // Gửi email thông báo hủy đơn hàng
-                await _emailService.SendOrderCancelledEmailAsync(
+                _emailService.SendOrderCancelledEmailAsync(
                     order.Email,
                     order.CustomerName,
                     order.OrderId.ToString()

@@ -172,37 +172,89 @@ wwwroot\images\product-detail-03.jpg
 wwwroot\images\product-min-01.jpg
 wwwroot\images\product-min-02.jpg
 wwwroot\images\product-min-03.jpg
+wwwroot\images\products\00052a11-7058-4a90-8818-660705aa3d4f_Commercial-Frame-Nocturnal-Nightvibes-Shirt-2.jpg
+wwwroot\images\products\05894a1c-3c35-4a2a-af5a-da3e311052c5_Dark-blue-scaled.png
+wwwroot\images\products\05b50e13-7fb8-416c-a3ca-856a0662f48e_6-6.jpg
 wwwroot\images\products\088056f8-5ab4-4871-acf4-69c1320c5880_Quần jean skinny.jpg
 wwwroot\images\products\08b5dc0c-a214-4b04-9241-97bd667ee217_Váy liền thân.jpg
-wwwroot\images\products\29a1b9e2-6123-4f76-a104-4829b66c0cc8_Áo thun nam basic.webp
+wwwroot\images\products\09cf50e7-1658-4c81-9958-1679e4911aac_Image-2.jpg
+wwwroot\images\products\0fa7d0ce-f3c3-4a2b-9c2f-e33abd7ed38c_Basic-Cravat-Commercial-Frame-6.jpg
+wwwroot\images\products\13d566ac-83b8-46e9-a276-6fc8773a1aa6_Black-scaled.png
+wwwroot\images\products\1a419a05-ad2a-470b-b7aa-8c6e917cc5cc_Pocket-Shirt-Commercial-Frame-8.png
+wwwroot\images\products\1a6337b6-44f6-4798-a76b-c0a34265a0b7_Basic-Cravat-Commercial-Frame-4.png
+wwwroot\images\products\1be9cd5f-d87a-4ee4-85ba-ab48c13a0d8d_1-2-scaled.png
+wwwroot\images\products\20427096-9804-4e81-b4d6-c2f25ebbce24_2-4.png
+wwwroot\images\products\20f330af-7a1d-46de-859c-4c2b4400684f_3-scaled.png
+wwwroot\images\products\224a397d-d1de-4600-8924-64e8a3947190_4-2.jpg
+wwwroot\images\products\2320eef3-c129-499e-85a2-2e99bf73fabf_Basic-Cravat-Commercial-Frame-7-scaled.png
+wwwroot\images\products\2772df38-c4f9-4041-a1e0-36483ceb2a06_Con-cu-keychain.jpg
+wwwroot\images\products\27875133-1e8d-4eb3-9e88-cd8d8251372a_2.jpg
 wwwroot\images\products\2a1dde43-59a8-4bf5-adf7-71633fcdd27d_Áo thun nam basic.webp
+wwwroot\images\products\30d497a7-c8f8-4c88-be88-77db0016eb85_44.png
 wwwroot\images\products\3191dbe1-c074-4d3b-a2dd-a4939842c321_Áo thun nữ crop top.jpg
+wwwroot\images\products\319795b4-5a77-4f55-8d20-38ed4f75c47c_4-3.png
 wwwroot\images\products\320eaaed-ee8d-4f41-a803-097bdfb871b4_Quần jean skinny.jpg
+wwwroot\images\products\32670605-9106-4f71-9bec-68867555ce97_white-scaled1.png
+wwwroot\images\products\34c8960e-6f61-4cdd-814e-82a6e798c268_3-8.jpg
+wwwroot\images\products\364f529b-73e2-4c39-bb39-c40385d8b969_9-5.jpg
 wwwroot\images\products\3b71dc62-f084-40fa-aa86-14e1f4ffae5f_Áo thun nữ crop top.jpg
+wwwroot\images\products\4090cef7-b3e9-49d2-b9ac-6f42e8782288_33.png
+wwwroot\images\products\4119420f-1823-4d7b-97ad-a7e8713f4e34_13-1.jpg
+wwwroot\images\products\4141cd08-1d66-4d4a-b343-94a02910140b_5-5.jpg
+wwwroot\images\products\417950bc-bc91-4f6f-adbe-a5c0e9c59e42_Dark-Red-scaled.png
+wwwroot\images\products\42598cae-10c0-4c99-ac48-1cc0d3a49a4b_4-8.jpg
+wwwroot\images\products\47d2de6c-b18a-41ca-af19-d1141fe41630_White-scaled.png
+wwwroot\images\products\53312fe3-4703-4545-82d1-e5076f41366d_8-12.jpg
+wwwroot\images\products\534a1fea-661e-45e9-87f9-0a570f0b7a03_8.jpg
+wwwroot\images\products\555c571a-7ae9-418f-a23d-c68613d75385_7-8.jpg
 wwwroot\images\products\5788a397-beff-4441-aff0-c31e0b8bbc93_Áo thun nam basic.webp
 wwwroot\images\products\5abe4ce7-d22f-4467-a8e6-de684d7c946e_Áo thun nữ crop top.jpg
+wwwroot\images\products\5be34ae2-f375-4be3-901b-7bf622da86e4_Image-1.jpg
 wwwroot\images\products\62421c08-2994-4016-8eb0-965fa113fc14_Quần jean skinny.jpg
-wwwroot\images\products\69764c41-f8fd-46a8-bedd-eb442c03c2ac_Váy liền thân.jpg
+wwwroot\images\products\65ed855c-bd1f-4c0f-8911-7af8521f50aa_tote-mockup-scaled.png
+wwwroot\images\products\6a663cd4-8f1c-4b47-bff7-bd561d662254_8-scaled.png
+wwwroot\images\products\6c44685c-6f73-4bfc-8732-f802aa57fa70_3-1.png
 wwwroot\images\products\6e6ecdf0-1027-478e-bcf9-c9d62a73d2b9_Áo sơ mi trắng.jpg
+wwwroot\images\products\6ede276e-4013-4285-8899-c2855f735f93_4.jpg
+wwwroot\images\products\6f0fb7e8-3e33-4a7e-9e26-05fd5458f0c6_6-1.jpg
+wwwroot\images\products\6f616b3d-5ba3-41a7-90b7-2ec3dd18eee1_blue-1-scaled.png
+wwwroot\images\products\7202d8e2-0fb7-48b0-9ff1-e1cfa36305b5_2-3.jpg
+wwwroot\images\products\722a4470-0d81-4509-bff1-255ee6d26d29_Light-Grey-scaled.png
+wwwroot\images\products\75dadd43-215c-4576-9bb9-bdd7876af8cc_111.png
+wwwroot\images\products\78cf44d5-7375-4012-a7d9-df4ade7eb179_Con-cu-keychain-1.jpg
+wwwroot\images\products\78fc8ee3-a8ad-4d79-a394-debf0d71dfb2_Commercial-Frame-Layered-Sweat-Pants-3.jpg
+wwwroot\images\products\7d06970c-cff6-4dd3-8aba-77f35711c540_3-8 (1).jpg
+wwwroot\images\products\8020550b-5a44-4e02-9fb8-a0d3eceb4c2a_10-4.jpg
+wwwroot\images\products\8207339d-8f5f-4713-b4a8-4a53d1533d72_2.png
 wwwroot\images\products\8282d036-94c1-4336-ba94-ced2c62ba4c1_Áo sơ mi trắng.jpg
-wwwroot\images\products\9c8bd10b-285f-4506-a400-a653afb70f58_Váy liền thân.jpg
-wwwroot\images\products\a309ea15-b161-4cd8-aee3-dce188c52a67_Áo thun nữ crop top.jpg
-wwwroot\images\products\a61fef9b-e930-4519-8bb9-0d9cd133d31b_Quần jean skinny.jpg
-wwwroot\images\products\b2a7fd3b-ab1a-4ef3-ac2e-2b7f53e4ee26_Áo thun nam basic.webp
-wwwroot\images\products\b62b9b6d-8305-4fc4-a8ba-8c15e6e8d8a8_Áo thun nữ crop top.jpg
-wwwroot\images\products\b9f5a659-d140-4a68-8fd5-902e65caea0e_Áo thun nam basic.webp
-wwwroot\images\products\bd7085c1-a8f3-49d0-a7ba-040b1b473ef1_Váy liền thân.jpg
-wwwroot\images\products\bef05b3a-f5a6-4006-b774-ddc3f2c01dcf_Áo sơ mi trắng.jpg
-wwwroot\images\products\c166ac00-aa0d-40d1-9a14-d5f856abdb35_Áo sơ mi trắng.jpg
-wwwroot\images\products\c63560fb-57b4-4f8c-bacc-856429000144_Quần jean skinny.jpg
+wwwroot\images\products\88bd0c1f-8303-44d8-ade6-d166e619df9c_4-1-scaled.png
+wwwroot\images\products\8a89fed7-6e5d-4004-8dc5-8cafcb45096e_Basic-Cravat-Commercial-Frame-5.jpg
+wwwroot\images\products\8e9e45e6-3f03-4565-8916-8d7ea89d2ffe_5-9.jpg
+wwwroot\images\products\8ed84700-3900-4573-9dbb-d6bdad504c65_Khaki-Jeans-Shorts-1.png
+wwwroot\images\products\962d5ad5-46e7-42e4-8b5c-6b33427b36cd_2-9 (1).jpg
+wwwroot\images\products\99f74df6-1cd8-4cf1-9525-86e7bec183a8_3-3.png
+wwwroot\images\products\9c85c0b5-ccc6-4988-a80a-23980647ed9a_Grey-1-scaled.png
+wwwroot\images\products\b1b5484a-7837-4da0-abc5-c864c04a0182_1-9.jpg
+wwwroot\images\products\b4389e86-76ec-44c3-aa11-f61bb9c9a6c6_Khaki-Jeans-Shorts-3.png
+wwwroot\images\products\b4dc46ab-e762-42d9-82da-11ac7049b7ea_2-2.png
+wwwroot\images\products\c22e5535-115f-42ff-b5e4-7f8d16edc9ad_2-9.jpg
+wwwroot\images\products\c466098a-046a-4770-ad05-9b0a3d0b2036_Commercial-Frame-Nocturnal-Nightvibes-Shirt-6.jpg
+wwwroot\images\products\cc9aa27f-f44d-48ed-9e99-982737c477c3_5.jpg
+wwwroot\images\products\cfdf1c32-ae64-4e22-ab6e-e9aa10349445_4.png
+wwwroot\images\products\d14ba24f-90f3-40be-b943-700098adfbb3_2-1-scaled.png
+wwwroot\images\products\d7187bff-4ab6-4f80-997f-2b6d85660411_Grey-scaled.png
 wwwroot\images\products\d807f56f-3b81-4155-864e-0e5498754c4e_Áo thun nam basic.webp
+wwwroot\images\products\d8e502b6-9c9a-4a3b-ad8e-d0d125976367_Commercial-Frame-Layered-Sweat-Pants-13.jpg
 wwwroot\images\products\da05fbc9-8973-4c27-a8c7-de076ffe38b0_Váy liền thân.jpg
 wwwroot\images\products\df50ae16-e992-44b2-810d-a06348341ea3_Váy liền thân.jpg
-wwwroot\images\products\eb6ab2b6-8040-4353-8edf-71100e46d090_Áo sơ mi trắng.jpg
+wwwroot\images\products\e6395558-a7a4-41b0-aa01-a095ee3cc2f7_1i.jpg
+wwwroot\images\products\e7fec890-c91c-4178-88f7-0c0a5f3b7986_5-1.png
+wwwroot\images\products\e919fed0-315f-448b-b755-dafcaf427263_Red-Front-1-1-scaled.png
+wwwroot\images\products\ea839c80-9de3-42ab-9d6c-2f2d1a2a3107_3.png
 wwwroot\images\products\ed08d3b2-6218-4b03-9281-ece6cb60dd48_Áo sơ mi trắng.jpg
-wwwroot\images\products\f30ffa2d-8513-4893-a9e3-9633b769615a_Áo sơ mi trắng.jpg
-wwwroot\images\products\f455836a-e235-45f2-b588-33aba94b4a6f_Áo thun nữ crop top.jpg
-wwwroot\images\products\f5b8e36a-f2c8-4fa8-a215-0c1acc306435_Quần jean skinny.jpg
+wwwroot\images\products\f751a8f8-c3ec-46ba-bc9f-8e1e65f9ca5a_Commercial-Frame-Layered-Sweat-Pants-6.jpg
+wwwroot\images\products\f772d28a-9149-4eff-8f58-1a3a78acf2ca_9-9.jpg
+wwwroot\images\products\fe00e58a-a57a-44d1-9ae9-ab11d4c557d7_4-8 (1).jpg
 wwwroot\images\slide-01.jpg
 wwwroot\images\slide-02.jpg
 wwwroot\images\slide-03.jpg
